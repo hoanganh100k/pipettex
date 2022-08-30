@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-client-logo-6",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\">\n            <div class=\"uk-width-1-1\">\n                <div class=\"uk-text-center\">\n                    <i class=\"fas fa-medal fa-lg in-icon-wrap circle\"></i>\n                    <h2 class=\"uk-margin-small-top uk-margin-remove-bottom\">Trusted by the world's best company</h2>\n                    <p class=\"uk-margin-small-top\">Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n                </div>\n                <div class=\"uk-grid-collapse uk-child-width-1-6@m uk-text-center uk-margin-medium-top in-margin-small-top@s in-client-logo-6\" data-uk-grid>\n                    <div class=\"uk-tile uk-tile-default\">\n                        <img class=\"uk-margin-remove\" src=\"img/blockit/in-client-logo-10.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                    </div>\n                    <div class=\"uk-tile uk-tile-default\">\n                        <img class=\"uk-margin-remove\" src=\"img/blockit/in-client-logo-7.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                    </div>\n                    <div class=\"uk-tile uk-tile-default\">\n                        <img class=\"uk-margin-remove\" src=\"img/blockit/in-client-logo-8.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                    </div>\n                    <div class=\"uk-tile uk-tile-default\">\n                        <img class=\"uk-margin-remove\" src=\"img/blockit/in-client-logo-9.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                    </div>\n                    <div class=\"uk-tile uk-tile-default\">\n                        <img class=\"uk-margin-remove\" src=\"img/blockit/in-client-logo-3.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                    </div>\n                    <div class=\"uk-tile uk-tile-default\">\n                        <img class=\"uk-margin-remove\" src=\"img/blockit/in-client-logo-1.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

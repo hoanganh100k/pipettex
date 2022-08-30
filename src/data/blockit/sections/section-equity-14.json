@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-equity-14",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section uk-section-primary uk-preserve-color in-equity-14 uk-background-contain uk-background-top-center\" data-src=\"img/in-equity-14-bg.svg\" data-uk-img>\n    <div class=\"uk-container uk-margin-small-bottom\">\n        <div class=\"uk-child-width-1-2@m uk-flex uk-flex-middle\" data-uk-grid>\n            <div>\n                <div class=\"uk-flex uk-flex-left uk-flex-middle\">\n                    <div class=\"uk-margin-right in-award-logo\">\n                        <img src=\"img/in-lazy.gif\" data-src=\"img/in-equity-5-award-3.svg\" alt=\"award\" width=\"128\" data-height data-uk-img>\n                    </div>\n                    <div class=\"in-award-badge\">\n                        <h3 class=\"uk-margin-remove\">Traders #1 Choice</h3>\n                        <h4 class=\"uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase in-heading-thin\">True ECN Account</h4>\n                        <p class=\"uk-text-small uk-margin-remove uk-visible@m\">Voted by industry professionals</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-flex uk-flex-right uk-flex-middle right-content\">\n                <ul class=\"uk-list in-list-check uk-margin-remove-bottom uk-margin-right\">\n                    <li>Zero Commissions</li>\n                    <li>Zero Deposit Fees</li>\n                </ul>\n                <span class=\"uk-margin-large-left\">\n                    <a href=\"#\" class=\"uk-button uk-button-secondary uk-button-large uk-border-rounded\">Open your account<i class=\"fas fa-arrow-circle-right uk-margin-small-left\"></i></a>\n                </span>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

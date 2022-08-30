@@ -1,0 +1,63 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 960px) {
+    .uk-section.uk-padding-large {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.uk-button {
+    font-family: $base-heading-font;
+}
+
+.in-button-app {
+    background-color: #1a1a1a;
+}
+.in-button-app:hover {
+    transition: all ease 200ms;
+    background-color: $base-primary-color;
+}
+@media (max-width: 960px) {
+    .in-button-app {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.in-highlight {
+    position: relative;
+    background: 0 0;
+    z-index: 0;
+    display: inline-block;
+    &::before {
+        content: '';
+        background: $base-primary-color;
+        border-radius: $base-border-radius;
+        position: absolute;
+        left: 0;
+        right: -2px;
+        bottom: -1px;
+        height: 4px;
+        z-index: -1;
+    }
+}
+
+.in-list-check > li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.in-list-check > li::before {
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900; 
+    color: $base-primary-color;
+    content: "\f058";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    background-image: none;
+}

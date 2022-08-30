@@ -1,0 +1,53 @@
+<nav class="uk-navbar-container{{#ifpage 'index' 'homepage2' 'homepage3' 'homepage4'}} uk-navbar-transparent{{/ifpage}}" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+    <div class="uk-container" data-uk-navbar>
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                {{> module-logo }}
+                <!-- navigation begin -->
+                <ul class="uk-navbar-nav uk-visible@m">
+                    {{#each navigation.nav}}
+                    <li><a href="{{../root}}{{link}}">{{title}}{{#if dropdown}}<i class="fas fa-chevron-down"></i>{{/if}}</a>{{#unless dropdown}}</li>{{/unless}}
+                        {{#if dropdown.single}}
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                {{#each dropdown.single}}
+                                <li><a href="{{../../root}}{{link}}">{{title}}{{#with icon}}<i class="fas {{name}} fa-sm"></i>{{/with}}</a></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        {{else}}
+                        {{#if dropdown.multiple}}
+                        <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                            <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        {{#each dropdown.multiple}}
+                                        <li><a href="{{../../root}}{{link}}">{{title}}{{#with icon}}<i class="fas {{name}} fa-sm"></i>{{/with}}</a></li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        {{#each dropdown.multiple_text}}
+                                        <li><a class="uk-disabled" href="#">{{text}}</a></li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{/if}}
+                        {{/if}}
+                    {{#if dropdown}}</li>{{/if}}
+                    {{/each}}
+                </ul>
+                <!-- navigation end -->
+            </div>
+        </div>
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item uk-visible@m in-optional-nav">
+                <a href="{{#if setting.header.signin.external}}{{setting.header.signin.url}}{{else}}{{root}}{{setting.header.signin.url}}{{/if}}" class="uk-button uk-button-text">{{{setting.header.signin.title}}}<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                <a href="{{#if setting.header.signup.external}}{{setting.header.signup.url}}{{else}}{{root}}{{setting.header.signup.url}}{{/if}}" class="uk-button uk-button-primary uk-border-rounded">{{{setting.header.signup.title}}}<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>

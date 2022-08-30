@@ -1,0 +1,52 @@
+<!-- slideshow content begin -->
+<div class="uk-section uk-padding-remove-vertical in-slideshow-gradient">
+    <div id="particles-js" class="uk-light in-slideshow uk-background-contain" data-src="img/in-equity-decor-1.svg" data-uk-img data-uk-slideshow>  
+        <hr>      
+        <ul class="uk-slideshow-items">
+            {{#each component.slideshows.[0].slides}}
+            <li class="uk-flex uk-flex-middle">
+                <div class="uk-container">
+                    <div class="uk-grid-large uk-flex-middle" data-uk-grid>
+                        <div class="uk-width-1-2@s in-slide-text">
+                            {{#if notification.enabled}}
+                            <p class="in-badge-text uk-text-small uk-margin-remove-bottom uk-visible@m"><span class="uk-label uk-label-success in-label-small">New</span>{{notification.text}}</p>
+                            {{/if}}
+                            <h1 class="uk-heading-small">{{{heading}}}</h1>
+                            <p class="uk-text-lead uk-visible@m">{{text}}</p>
+                            
+                            {{#if stockPrice.enabled }}
+                            <div class="uk-grid-medium uk-child-width-1-3@m uk-child-width-1-2@s uk-margin-medium-top uk-visible@s" data-uk-grid data-market="{{#each stockPrice.stock}}{{#if symbol}}{{symbol}}{{#unless @last}},{{/unless}}{{/if}}{{/each}}"> 
+                                {{#each stockPrice.stock}}
+                                {{#if symbol}}
+                                <div{{#if @last}} class="uk-visible@m"{{/if}}>
+                                    <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
+                                        <div class="in-symbol-logo">
+                                            <img src="{{root}}img/in-lazy.gif" data-src="{{logo}}" alt="ticker" width="28" height="28" data-uk-img>
+                                        </div>
+                                        <div class="in-price">
+                                            <h6 class="uk-margin-remove">{{trimSymbol symbol}}<span class="uk-text-small"></span></h6>
+                                            <p class="uk-margin-remove"><span class="fas fa-spinner fa-xs"></span>loading...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{/each}}
+                            </div>
+                            {{/if}}
+                        </div>
+                        <div class="in-slide-img">
+                            <img src="{{root}}img/in-lazy.gif" data-src="{{root}}{{slideImage}}" alt="image-slide" width="652" height="746" data-uk-img>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="uk-container">
+            <div class="uk-position-relative" data-uk-grid>
+                <ul class="uk-slideshow-nav uk-dotnav uk-position-bottom-right uk-flex uk-flex-middle"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slideshow content end -->

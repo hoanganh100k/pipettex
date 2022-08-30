@@ -1,0 +1,14 @@
+{
+  "time": 1630318870968,
+  "blocks": [
+    {
+      "id": "section-faq-4",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid-large\" data-uk-grid>\n            <div class=\"uk-width-1-2@m\">\n                <ul class=\"in-faq-4\" data-uk-accordion=\"collapsible: false\">\n                    <li class=\"uk-open uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded\">                        \n                        <a class=\"uk-accordion-title\" href=\"#\">How long is trial period exactly?</a>\n                        <div class=\"uk-accordion-content\">\n                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>\n                        </div>\n                    </li>\n                    <li class=\"uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded\">\n                        <a class=\"uk-accordion-title\" href=\"#\">How do i get started with this product?</a>\n                        <div class=\"uk-accordion-content\">\n                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat excepteur sint occaecat.</p>\n                        </div>\n                    </li>\n                    <li class=\"uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded\">\n                        <a class=\"uk-accordion-title\" href=\"#\">How does the transfer work?</a>\n                        <div class=\"uk-accordion-content\">\n                            <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga incididunt ut labore.</p>\n                        </div>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"uk-width-1-2@m\">                \n                <h2 class=\"uk-margin-medium-top\">Frequently asked questions</h2>\n                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, eiusmod tempor quis nostrud exercitation.</p>\n                <i class=\"fas fa-question fa-lg in-icon-wrap circle uk-margin-small-right\"></i>\n                <a href=\"#\" class=\"uk-button uk-button-link\">View another FAQ <i class=\"fas fa-chevron-right fa-xs uk-margin-small-left\"></i></a>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ],
+  "version": "2.21.0"
+}

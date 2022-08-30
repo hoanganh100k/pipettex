@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-equity-5",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section in-equity-5\">\n    <div class=\"uk-container uk-margin-remove-bottom\">\n        <div class=\"uk-grid uk-child-width-1-3@m uk-child-width-1-2@s\" data-uk-grid>\n            <div>\n                <div class=\"uk-flex uk-flex-left in-award\">\n                    <div class=\"uk-margin-small-right\">\n                        <img src=\"img/in-lazy.gif\" data-src=\"img/in-equity-5-award-1.svg\" alt=\"award-1\" width=\"91\" height=\"82\" data-uk-img>\n                    </div>\n                    <div>\n                        <h6>Best Mobile Trading App</h6>\n                        <p class=\"provider\">European CEO Magazine</p>\n                        <p class=\"year\">2019</p>\n                    </div>\n                </div>\n            </div>\n            <div>\n                <div class=\"uk-flex uk-flex-left in-award\">\n                    <div class=\"uk-margin-small-right\">\n                        <img src=\"img/in-lazy.gif\" data-src=\"img/in-equity-5-award-2.svg\" alt=\"award-2\" width=\"91\" height=\"82\" data-uk-img>\n                    </div>\n                    <div>\n                        <h6>Best Forex Ecn Broker</h6>\n                        <p class=\"provider\">UK Forex awards</p>\n                        <p class=\"year\">2020</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-visible@m\">\n                <div class=\"uk-flex uk-flex-left in-award\">\n                    <div class=\"uk-margin-small-right\">\n                        <img src=\"img/in-lazy.gif\" data-src=\"img/in-equity-5-award-3.svg\" alt=\"award-3\" width=\"91\" height=\"82\" data-uk-img>\n                    </div>\n                    <div>\n                        <h6>Best Trading Conditions</h6>\n                        <p class=\"provider\">Forex report magazine</p>\n                        <p class=\"year\">2021</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

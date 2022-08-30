@@ -1,0 +1,12 @@
+@import "../../base/base-variables.scss";
+
+// uikit breadcrumb variables
+// ========================================================================
+$breadcrumb-item-font-size:                          14px !default;
+$breadcrumb-item-color:                              rgba(44,45,48, 0.9) !default;
+$breadcrumb-item-active-color:                       rgba(255,255,255, 0.9) !default;
+
+// $breadcrumb-divider:                                 "›" !default;
+$breadcrumb-divider-margin-horizontal:               20px !default;
+$breadcrumb-divider-font-size:                       12px !default;
+$breadcrumb-divider-color:                           $breadcrumb-item-color !default;

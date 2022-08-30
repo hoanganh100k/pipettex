@@ -1,0 +1,1013 @@
+.uk-button {
+    .fa-arrow-circle-right {
+        font-size: 13px;
+        display: inline-block;
+        transform: rotate(-40deg);
+        transition: all linear 100ms;
+    }
+    &:hover {
+        .fa-arrow-circle-right {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.uk-button-text {
+    color: #4886d9;
+    &:hover {
+        color: darken(#4886d9, 10%);
+    }
+}
+
+.in-label-small {
+    font-size: 13px;
+    padding: 2px 7px 1px 7px;
+}
+
+.in-equity-breadcrumb {
+    background: $base-primary-color;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    margin-bottom: 20px;
+    .uk-breadcrumb {
+        padding-top: 13px;
+        padding-bottom: 16px;
+    }
+}
+
+.in-equity-1 {
+    .uk-card {
+        min-height: 252px;
+        font-size: 16px;
+        box-shadow: 0px 4px 25px -2px rgba(0,0,0,0.12);
+        .uk-button-text {
+            &::before {
+                border-color: #4886d9;
+            }
+            &.uk-position-bottom-right {
+                right: 34px;
+                bottom: 34px;
+            }
+        }
+        .in-product-name {
+            width: 24px;
+            height: 24px;
+            color: #95a5a6;
+            background-color: $base-default-color;
+            border-radius: 50%;
+            font-size: 9px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 24px;
+            margin-right: 8px;
+            i {
+                font-size: 12px;
+                line-height: 25px;
+            }
+            &.red {
+                color: $base-default-color;
+                background-color: #e54a41;
+            }
+            &.green {
+                color: $base-default-color;
+                background-color: #37bc9c;
+            }
+            &.blue {
+                color: $base-default-color;
+                background-color: #4886d9;
+            }
+        }
+    }
+    .uk-card-body {
+        padding: 30px 34px 58px 34px;
+    }
+    .uk-card-default  {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.in-equity-2 {    
+    .in-feature-box {
+        a {
+            color: $base-font-color;
+            transition: all ease 600ms;
+            .in-icon-wrap {
+                width: 80px;
+                height: 80px;
+                background-color: $base-default-color;
+                border-radius: 10px;
+                box-shadow: 0px 6px 20px -2px rgba(70,76,81,0.1);
+                transition: all ease 600ms;
+                img {
+                    height: 42px;
+                }
+            }
+            &:hover {
+                color: $base-primary-color;
+                text-decoration: none;
+                .in-icon-wrap {
+                    box-shadow: 0px 0px 35px -2px rgba(252,180,45,0.5);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-2 {
+        &.uk-background-contain {
+            background-size: 640px 140px;
+            background-position: 0% 36%;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-2 {
+        &.uk-background-contain {
+            background-size: 1250px 179px;
+        }
+    }
+}
+
+.in-equity-3 {
+    .uk-text-warning {
+        color: $base-primary-color !important;
+    }
+    .uk-card {
+        width: 590px;
+        margin-right: 25px;
+        position: relative;
+        &:after {
+            background: rgba(252,180,45,0.30);
+            content: "";
+            width: 590px; 
+            height: 400px;
+            position: absolute;
+            z-index: -1;
+            top: 0px; 
+            left: 0px;
+            transform: rotate(-8deg);
+            border-radius: $base-border-radius-2;
+        }
+    }
+    .uk-card-body {
+        padding: 20px 10px;
+    }
+    .widget-card {
+        padding: 0 22px 22px 24px;
+    }
+    .uk-card-default {
+        background-color: $base-default-color;
+        box-shadow: 0px 6px 20px -2px rgba(70,76,81,0.2);
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-3 {
+        .uk-card {
+            margin-right: 0;
+            &:after {
+                width: 100%; 
+            }
+        }
+    }
+}
+
+.in-equity-4 {
+    background-color: $base-default-color;
+    border-top: 1px solid #e9eaec;
+    border-bottom: 1px solid #e9eaec;
+    .in-testimonial-2 {
+        .uk-background-contain {
+            padding-top: 25px;
+            background-size: 231px 250px;
+        }
+        blockquote {
+            font-size: 24px;
+            font-family: $base-font-family;
+            color: #2a2a2a;
+            margin-top: 2px;
+            padding: 0 0 21px 57px 0;
+            p:first-of-type::before {
+                content: "“";
+                font-family: $base-font-family;
+                font-size: 172px;
+                font-style: italic;
+                color: #2a2a2a;
+                position: absolute;
+                margin: -122px 0 0 -29px;
+            }
+        }
+    }
+}
+
+.in-equity-5 {
+    background-color: $base-default-color;
+    .in-award {
+        h6 {
+            text-transform: uppercase;
+            margin: 5px 0 0px 0;
+        }
+        .provider {
+            color: #9f9f9f;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 7px 0 -12px 0;
+        }
+        .year {
+            color: #dddddd;
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        img {
+            height: 82px;
+        }
+    }
+}
+
+.in-equity-6 {
+    &.uk-background-contain {
+        background-size: 765px 432px;
+        background-position: 65% 5%;
+    }
+    .uk-text-lead {
+        color: $base-default-color;
+    }
+    .uk-button-secondary {
+        color: $base-secondary-color;
+        background-color: $base-default-color;
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-6 {
+        &.uk-background-contain {
+            background-size: 765px 432px;
+            background-position: 15% 100%;
+        }
+        .uk-flex.button-app {
+            display: block;
+            text-align: center;
+            div {
+                margin-bottom: 20px;
+            }
+            .uk-margin-right {
+                margin-right: 0 !important;
+            }
+            .uk-margin-left {
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-6 {
+        &.uk-background-contain {
+            background-position: 140px 100%;
+        }
+    }
+}
+
+.in-equity-7 {
+    .uk-card-default {
+        background-color: rgba(255,255,255,0.65);
+    }
+    .uk-card-body {
+        padding: 30px;
+    }
+    .in-symbol-1 {
+        width: 270px;
+        height: 270px;
+        animation: float 6s ease-in-out infinite;
+    }
+    .in-symbol-2 {
+        width: 205px;
+        height: 205px;
+        animation: float 6s ease-in-out infinite;
+    }
+    .in-symbol-3 {
+        width: 140px;
+        height: 140px;
+        animation: float 6s ease-in-out infinite;
+    }
+    .in-symbol-4 {
+        width: 105px;
+        height: 105px;
+        animation: float 6s ease-in-out infinite;
+    }
+    .in-symbol-5 {
+        width: 65px;
+        height: 65px;
+        background: #1bb0ed;
+        border-radius: 50%;
+    }
+    .in-symbol-6 {
+        width: 55px;
+        height: 55px;
+        background: #59b84e;
+        border-radius: 50%;
+    }
+    .in-symbol-7 {
+        width: 70px;
+        height: 70px;
+        background: #fac82b;
+        border-radius: 50%;
+    }
+    .in-symbol-8 {
+        width: 35px;
+        height: 35px;
+        background: #3985fc;
+        border-radius: 50%;
+    }
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-10px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-7 {
+        &.uk-background-contain {
+            background-size: 1200px 376px;
+            background-position: 35% 0%;
+        }
+        .in-symbol-wrap {
+            padding-left: 12%;
+            height: 380px;
+        }
+        .in-symbol-1 {
+            width: 135px;
+            height: 135px;
+            left: 20% !important;
+            top: 42% !important;
+        }
+        .in-symbol-2 {
+            width: 102px;
+            height: 102px;
+        }
+        .in-symbol-3 {
+            width: 70px;
+            height: 70px;
+        }
+        .in-symbol-4 {
+            width: 52px;
+            height: 52px;
+        }
+        .in-symbol-5 {
+            width: 45px;
+            height: 45px;
+        }
+        .in-symbol-6 {
+            width: 35px;
+            height: 35px;
+        }
+        .in-symbol-7 {
+            width: 50px;
+            height: 50px;
+            left: 60% !important;
+            top: 84% !important;
+        }
+        .in-symbol-8 {
+            width: 15px;
+            height: 15px;
+            left: 32% !important;
+            top: 87% !important;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-7 {
+        .in-symbol-1 {
+            width: 165px;
+            height: 165px;
+            top: 32% !important;
+            left: 23% !important;
+        }
+        .in-symbol-2 {
+            width: 122px;
+            height: 122px;
+            left: 54% !important;
+        }
+        .in-symbol-3 {
+            width: 90px;
+            height: 90px;
+            top: 0% !important;
+        }
+        .in-symbol-4 {
+            width: 52px;
+            height: 52px;
+        }
+        .in-symbol-5 {
+            width: 45px;
+            height: 45px;
+        }
+        .in-symbol-6 {
+            width: 35px;
+            height: 35px;
+        }
+        .in-symbol-7 {
+            width: 50px;
+            height: 50px;
+        }
+        .in-symbol-8 {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.in-equity-8 {
+    background: rgb(38,38,40);
+    background: linear-gradient(0deg, rgba(55,55,55,1) 0%, rgba(24,24,24,1) 90%, rgba(24,24,24,1) 100%);
+    .in-current-stats {
+        .uk-text-small {
+            font-size: 12px;
+        }
+        h2.uk-text-primary {
+            font-size: 36px;
+            border: $base-border-width solid $base-default-color;
+            border-radius: $base-border-radius-2;
+            padding: 10px 18px;
+        }
+    }
+    .uk-card-secondary {
+        height: 407px;
+        background-color: rgba(0,0,0,0.25);
+    }
+    .uk-card-body {
+        padding: 20px 10px;
+    }
+    .widget-card {
+        padding: 0 22px 22px 24px;
+    }
+}
+
+.in-equity-9 {
+    .uk-background-contain {
+        background-size: 310px 410px;
+    }
+    .in-register {
+        position: relative;
+        .in-icon-wrap {
+            width: 56px;
+            height: 56px;
+            background-color: $base-container-color;
+            box-shadow: inset 0px 0px 0px 2px  $base-primary-color;
+            border: 18px solid $base-container-color;
+            font-size: 22px;
+            font-family: $base-heading-font;
+            color: $base-primary-color;
+            margin: -20px 0 -25px 0;
+            position: relative;
+            z-index: 0.1;
+        }
+        .in-h-line::after {
+            width: 61%;
+            height: 1px;
+            background-color: #d8dfe2;
+            position: absolute;
+            content: '';
+            top: 40%;
+            left: 22%;
+            z-index: 0;
+        }
+    }
+    .uk-card-primary {
+        h4, i {
+            color: $base-heading-color;
+        }
+        p {
+            color: $base-default-color;
+        }
+        .uk-button-text {
+            &::before {
+                border-color: #4886d9;
+            }
+        }
+    }
+    .uk-card-primary.uk-card-body .uk-button-text {
+        color: $base-heading-color;
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-9 {
+        .uk-background-contain {
+            background-position: 420% 0%;
+        }
+        .in-register {
+            .in-h-line::after {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-9 {
+        .uk-background-contain {
+            background-position: 110% 0%;
+        }
+        .in-register {
+            .in-h-line::after {
+                display: block;
+                top: 34%;
+            }
+        }
+    }
+}
+
+.in-equity-10 {
+    .uk-card-body {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .in-client-logo-3 {
+        .uk-tile {
+            background: $base-default-color;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-10 {
+        .uk-flex {
+            display: block;
+            text-align: center;
+        }
+        .in-client-logo-3 .uk-tile{
+            img {
+                position: relative;
+                left: 5%;
+            }
+        }
+    }
+}
+
+.in-equity-11 {
+    &.uk-background-contain {
+        background-size: 832px 480px;
+        background-position: 85% 0%;
+    }
+    .uk-card-default {
+        background-color: rgba(255,255,255,0.75);
+    }
+    .uk-card-body {
+        padding: 26px;
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-11 {
+        &.uk-background-contain {
+            background-size: 640px 369px;
+            background-position: -50% 0%;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-11 {
+        &.uk-background-contain {
+            background-position: 250% 0%;
+        }
+    }
+}
+
+.in-equity-12 {
+    .uk-card-body {
+        padding: 50px 50px 60px 50px;
+    }
+    .in-img-mockup {
+        position: relative;
+        bottom: -60px;
+    }
+    .uk-card-secondary>:not([class*=uk-card-media]) .uk-button-primary {
+        color: $base-secondary-color;
+        background-color: $base-primary-color;
+    }
+    .in-icon-wrap {
+        color: $base-default-color;
+        background: lighten($base-secondary-color, 20%);
+        font-size: 22px;
+        font-weight: 700;
+        width: 54px;
+        height: 54px;
+        transition: all ease 600ms;
+    }
+    .in-steps {
+        border: 1px solid lighten($base-secondary-color, 20%);
+        border-radius: $base-border-radius-2;
+        padding: 20px 0 0 20px;
+        transition: all ease 600ms;
+        &.active-step {
+            border-color: $base-primary-color;
+            cursor: pointer;
+            .in-icon-wrap {
+                color: $base-secondary-color;
+                background: $base-primary-color;
+                transition: all ease 600ms;
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-12 {
+        .button-app.uk-flex {
+            display: block;
+            text-align: center;
+            .uk-button {
+                margin-top: 20px;
+                margin-left: 0 !important;
+            }
+        }
+        .uk-card-body {
+            padding: 30px 30px 10px 30px;
+        }
+        .in-img-mockup {
+            bottom: -10px;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-12 {
+        h2 {
+            text-align: center;
+        }
+        .button-app.uk-flex {
+            margin-top: 30px;
+            .uk-button {
+                margin-top: 0px;
+                margin-left: 25px !important;
+            }
+        }
+    }
+}
+
+.in-equity-13 {
+    div {
+        article {
+            border-bottom: $base-border-width solid $base-border-color;
+            padding-top: 18px;
+            padding-bottom: 20px;
+            h5 {
+                margin-bottom: 5px;
+                a {
+                    color: $base-heading-color;
+                }
+            }
+            .uk-text-small {
+                font-size: 12px;
+            }
+        }
+        article:last-child {
+            border-bottom: 0;
+        }
+    }
+    .uk-card-default {
+        background: transparent;
+        border: 1px solid lighten(#4886d9, 30%);
+        box-shadow: 0 2px 8px rgba(34,89,163,0.1);
+    }
+    .uk-card-body {
+        padding: 20px;
+    }
+    .uk-subnav li {
+        a {
+            color: #4886d9;
+        }
+        .in-icon-wrap {
+            color: #4886d9;
+            background-color: lighten(#4886d9, 35%);
+        }
+    }
+    .uk-subnav-divider > :nth-child(n+2):not(.uk-first-column)::before {
+        border-color: lighten(#4886d9, 30%);
+    }
+}
+
+.in-equity-14 {
+    &.uk-background-contain {
+        background-size: 780px 390px;
+        background-position: 35% 5%;
+    }
+    .in-award-logo {
+        position: relative;
+        z-index: 1;
+    }
+    .in-award-badge {
+        background: rgba(255,255,255,0.3);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255,255,255,0.5);
+        border-radius: 18px;
+        padding: 11px 25px 15px 80px;
+        position: relative;
+        left: -85px;
+        .uk-text-small {
+            color: #4886d9;
+        }
+    }
+    .in-heading-thin {
+        font-weight: 300;
+    }
+    .in-list-check li {
+        color: $base-heading-color;
+        font-weight: 700;
+    }
+    .in-list-check > li::before {
+        font-size: 23px;
+        color: #4886d9;
+        z-index: 1;
+        position: relative;
+        top: -6px;
+        left: -18px;
+    }
+    .in-list-check > li::after {
+        width: 21px;
+        height: 21px;
+        background: $base-default-color;
+        content: "";
+        float: left;
+        border-radius: 50%;
+        position: relative;
+        left: -10px;
+        z-index: 0;
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-14 {
+        .in-award-badge {
+            width: 100%;
+            padding: 11px 0px 4px 48px;
+            left: -55px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            h3 {
+                font-size: 1.2rem;
+            }
+            h4 {
+                font-size: .95rem;
+            }
+        }
+        .uk-flex.right-content {
+            display: block;
+            .in-list-check {
+                margin-left: -20px;
+            }
+            .uk-margin-large-left {
+                margin-left: 0 !important;
+            }
+            .uk-button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-14 {
+        .in-award-logo {
+            margin-left: 22%;
+        }
+        .in-award-badge {
+            width: 32%;
+            padding: 15px 0px 8px 48px;
+            h3 {
+                font-size: 1.4rem;
+            }
+            h4 {
+                font-size: 1.1rem;
+            }
+        }
+        .uk-flex.right-content {
+            margin-left: 35%;
+            .uk-margin-large-left {
+                margin-left: -20px !important;
+            }
+        }
+    }
+}
+
+.in-equity-15 {
+    &.uk-background-contain {
+        background-position: 68% 0%;
+    }
+    .uk-text-lead {
+        color: rgba(255,255,255,.7);
+    }
+    .uk-button-primary {
+        color: $base-secondary-color;
+        background: $base-default-color;
+    }
+    .uk-button-default {
+        color: lighten($base-secondary-color, 10%);
+        box-shadow: inset 0px 0px 0px 1px lighten($base-secondary-color, 20%);
+    }
+    hr {
+        margin: 50px 0 40px 0;
+        border-color: rgba(0,0,0,0.18);
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-15 {
+        &.uk-background-contain {
+            background-size: 560px 428px;
+        }
+        &.uk-background-center {
+            background-position: -10% 0% !important;
+        }
+        .uk-flex.get-started {
+            display: block;
+            text-align: center;
+            .uk-margin-left {
+                margin-top: 20px;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-15 {
+        &.uk-background-contain {
+            background-size: 760px 581px;
+        }
+        &.uk-background-center {
+            background-position: 300px 0% !important;
+        }
+        .uk-flex.get-started {
+            .uk-margin-left {
+                margin-top: 26px;
+                margin-left: 10px !important;
+            }
+        }
+    }
+}
+
+.in-equity-16 {
+    background-color: $base-default-color;
+    border-top: 1px solid #e9eaec;
+    border-bottom: 1px solid #e9eaec;
+    .uk-card-default {
+        background-color: transparent;
+        border-radius: $base-border-radius-2;
+        border: 1px solid #d8d8d8;
+        cursor: default;
+        padding: 15px;
+        transition: all ease 600ms;
+        i {
+            color: $base-primary-color;
+            font-size: 38px;
+            background: $base-default-color;
+            border-left: 25px solid $base-default-color;
+            border-right: 25px solid $base-default-color;
+            position: relative;
+            top: -34px;
+        }
+        h5 {
+            margin-top: -22px;
+            margin-bottom: -13px;
+        }
+        p {
+            padding-bottom: 8px;
+        }
+        &:hover {
+            cursor: pointer;
+            border-color: $base-primary-color;
+            text-decoration: none;
+            box-shadow:  0 5px 15px rgba(0,0,0,0.08);
+        }
+    }
+    .in-equity-video {
+        width: 97%;
+        margin-right: 25px;
+        position: relative;
+        &:hover {
+            img {
+                transition: all ease 600ms;
+                filter: brightness(100%);
+            }
+        }
+        img, .uk-position-center {
+            position: relative;
+            z-index: 1;
+        }
+        img {
+            filter: brightness(60%);
+            box-shadow: 0px 6px 20px -2px rgba(70,76,81,0.2);
+            transition: all ease 600ms;
+        }
+        .in-play-button {
+            width: 75px;
+            height: 75px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, .9);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+            animation: pulse-white 2s infinite;
+            z-index: 1;
+        }
+        i {
+            color: $base-primary-color;
+            font-size: 24px;
+            position: absolute;
+            top: 25px;
+            left: 28px;
+        }
+        &:before {
+            background: rgba(252,180,45,0.30);
+            content: "";
+            width: 100%; 
+            height: 100%;
+            position: absolute;
+            top: 0px; 
+            left: 0px;
+            transform: rotate(-8deg);
+            border-radius: $base-border-radius-2;
+        }
+        @keyframes pulse-white {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            
+            70% {
+                box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+            }
+            
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+    }
+}
+
+.in-equity-17 {
+    .uk-card-default {
+        background-color: $base-default-color;
+        border-radius: $base-border-radius-2;   
+        border: $base-border-width solid #d8d8d8;     
+    }
+    .uk-card-body {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .in-equity-pricing {
+        div:first-child {
+            .uk-card {
+                border-right: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-top: 35px;
+            }
+        }
+        div:last-child {
+            .uk-card-body {
+                padding-top: 75px;
+                padding-bottom: 75px;
+            }
+            .uk-card-default {
+                border-color: $base-primary-color;
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-17 {
+        .in-equity-pricing {
+            div:first-child {
+                .uk-card {
+                    border-right: $base-border-width-2 solid $base-border-color;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    margin-top: 0;
+                    margin-bottom: 35px;
+                }
+            }
+            div:last-child {
+                .uk-card-body {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.in-equity-18 {
+    .in-client-logo-6 {
+        .uk-tile {
+            background: $base-default-color;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-equity-18 {
+        .in-client-logo-6 {
+            img {
+                width: 35%;
+            }
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-equity-18 {
+        .in-client-logo-6 .uk-tile:nth-child(5) {
+            border-bottom: 0;
+        }
+    }
+}

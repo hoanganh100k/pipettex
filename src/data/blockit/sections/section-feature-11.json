@@ -1,0 +1,14 @@
+{
+  "time": 1629983634458,
+  "blocks": [
+    {
+      "id": "section-feature-11",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\">\n            <div class=\"uk-width-2-3@m\">\n                <h1>Blockit is easy way to make beautiful website powered by UIkit 3</h1>\n                <p class=\"uk-text-lead\">Lorem ipsum dolor sit amet consectet adipiscing elite, sed do eiusmod tempor incididunt ut laboremi dolore magna aliqua.</p>\n                <a href=\"#\" class=\"uk-button uk-button-large uk-button-text uk-margin-small-top\">explore all features<i class=\"fas fa-chevron-circle-right fa-xs uk-margin-small-left\"></i></a>\n                <div class=\"uk-grid uk-child-width-1-4@m uk-margin-large-top uk-text-center\" data-uk-grid>\n                    <div>\n                        <i class=\"fas fa-cog fa-5x in-icon-wrap large transparent\"></i>\n                        <h3 class=\"uk-margin-top\">Feature one</h3>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-box-open fa-5x in-icon-wrap large transparent\"></i>\n                        <h3 class=\"uk-margin-top\">Feature two</h3>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-road fa-5x in-icon-wrap large transparent\"></i>\n                        <h3 class=\"uk-margin-top\">Feature three</h3>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-paper-plane fa-5x in-icon-wrap large transparent\"></i>\n                        <h3 class=\"uk-margin-top\">Feature four</h3>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ],
+  "version": "2.21.0"
+}

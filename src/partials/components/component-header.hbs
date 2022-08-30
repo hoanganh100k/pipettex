@@ -1,0 +1,10 @@
+<header>
+    <!-- header content begin -->
+    <div class="uk-section uk-padding-remove-vertical">        
+        {{> module-navigation }}
+    </div>    
+    <!-- header content end -->
+</header>
+{{#unlesspage 'index' 'homepage2' 'homepage3' 'homepage4'}}
+{{> component-breadcrumb }}
+{{/unlesspage}}

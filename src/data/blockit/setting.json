@@ -1,0 +1,138 @@
+{
+  "siteInfo": {
+    "pageTitle": "Equity HTML5 Template",
+    "metaDescription": "Premium HTML5 Template by Indonez",
+    "metaKeywords": [
+      "blockit",
+      "uikit3",
+      "indonez",
+      "handlebars",
+      "scss",
+      "javascript"
+    ],
+    "metaAuthor": "Indonez",
+    "metaThemeColor": "#FCB42D",
+    "favicon": "favicon.ico",
+    "touchIcon": "apple-touch-icon.png"
+  },
+  "colors": {
+    "backgroundColor": "#F5F7F9",
+    "primaryColor": "#FCB42D",
+    "secondaryColor": "#252526",
+    "headingColor": "#333333",
+    "bodyTextColor": "#707070",
+    "linkColor": "#1E87F0"
+  },
+  "header": {
+    "siteLogo": {
+      "src": "img/in-logo.svg",
+      "width": "146",
+      "height": "39"
+    },
+    "signup": {
+      "title": "Sign up",
+      "url": "#",
+      "external": false
+    },
+    "signin": {
+      "title": "Log in",
+      "url": "signin.html",
+      "external": false
+    }
+  },
+  "footer": {
+    "copyrightText": "©2021 Equity Markets Incorporated. All Rights Reserved.",
+    "footerLink": {
+      "enabled": true,
+      "link": [
+        {
+          "title": "Risk disclosure",
+          "url": "#",
+          "external": false
+        },
+        {
+          "title": "Privacy policy",
+          "url": "#",
+          "external": false
+        },
+        {
+          "title": "Return policy",
+          "url": "#",
+          "external": false
+        },
+        {
+          "title": "Customer Agreement",
+          "url": "#",
+          "external": false
+        },
+        {
+          "title": "AML policy",
+          "url": "#",
+          "external": false
+        }
+      ]
+    },
+    "paymentLogo": {
+      "enabled": true,
+      "logo": [
+        {
+          "src": "img/in-footer-mastercard.svg",
+          "width": "34",
+          "height": "21"
+        },
+        {
+          "src": "img/in-footer-visa.svg",
+          "width": "50",
+          "height": "16"
+        }
+      ]
+    }
+  },
+  "authors": [
+    {
+      "id": "9jki2e",
+      "name": "Indonez",
+      "email": "templates@indonez.com",
+      "role": "FrontEnd Dev",
+      "avatar": "img/blockit/blockit-avatar.svg"
+    },
+    {
+      "id": "bk1baa",
+      "name": "Adiba Bachtiar",
+      "email": "maybe@parker.com",
+      "role": "Contributor",
+      "avatar": "img/user/author-lybqnhew0wc.jpg"
+    }
+  ],
+  "blog": {
+    "categories": [
+      "Crypto",
+      "Health",
+      "Markets",
+      "Politics",
+      "Technology",
+      "World"
+    ],
+    "postPerPage": "3",
+    "showWidgets": {
+      "allHide": false,
+      "categories": true,
+      "latestPosts": true,
+      "tags": true
+    },
+    "displayAuthor": true,
+    "displayTag": true,
+    "displayShareButtons": true,
+    "disqussShortname": "html-demo"
+  },
+  "socialMedia": {
+    "facebook": "#some-link",
+    "twitter": "#some-link",
+    "instagram": "#some-link",
+    "linkedin": "",
+    "behance": "",
+    "whatsapp": "",
+    "telegram": "#some-link",
+    "youtube": "#some-link"
+  }
+}

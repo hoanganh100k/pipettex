@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-equity-18",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section uk-padding-remove-vertical in-equity-18\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\" data-uk-grid>\n            <div class=\"uk-width-1-1\">\n                <div class=\"uk-card uk-card-default uk-card-body uk-border-rounded\">\n                    <h4 class=\"uk-text-center in-offset-top-10\">Fast and reliable withdrawal/deposit method</h4>\n                    <div class=\"uk-grid-collapse uk-child-width-1-6@m uk-child-width-1-2@s uk-text-center in-client-logo-6\" data-uk-grid>\n                        <div class=\"uk-tile uk-tile-default\">\n                            <img class=\"uk-margin-remove\" src=\"img/in-equity-payment-1.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                        </div>\n                        <div class=\"uk-tile uk-tile-default\">\n                            <img class=\"uk-margin-remove\" src=\"img/in-equity-payment-2.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                        </div>\n                        <div class=\"uk-tile uk-tile-default\">\n                            <img class=\"uk-margin-remove\" src=\"img/in-equity-payment-3.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                        </div>\n                        <div class=\"uk-tile uk-tile-default\">\n                            <img class=\"uk-margin-remove\" src=\"img/in-equity-payment-4.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                        </div>\n                        <div class=\"uk-tile uk-tile-default\">\n                            <img class=\"uk-margin-remove\" src=\"img/in-equity-payment-5.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                        </div>\n                        <div class=\"uk-tile uk-tile-default\">\n                            <img class=\"uk-margin-remove\" src=\"img/in-equity-payment-6.svg\" alt=\"client-logo\" width=\"167\" height=\"55\">\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

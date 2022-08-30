@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- standard meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Blockit is really awesome seriously, you must try!">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site properties -->
+    <title>Blockit editor - components</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader"></div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container uk-container-expand" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo uk-margin-right" href="index.html">
+                                <img class="uk-margin-small-right in-offset-top-10" src="img/blockit-logo.svg" alt="blockit" width="24" height="24">Blockit
+                            </a>
+                            <!-- logo end -->
+                        </div>
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="pages.html"><i class="fas fa-clone fa-sm"></i>Pages</a></li>
+                            <li><a href="navigation.html"><i class="fas fa-compass fa-sm"></i>Navigation</a></li>
+                            <li><a href="posts.html"><i class="fas fa-thumbtack fa-sm"></i>Posts</a></li>
+                            <li><a href="components.html"><i class="fas fa-plug fa-sm"></i>Components</a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog fa-sm"></i>Settings</a></li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-margin-medium-left">
+                            <a href="/" class="uk-button uk-button-primary uk-button-small uk-border-pill" target="_blank"><i class="fas fa-expand"></i>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section blockit-components">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex uk-flex-middle in-offset-bottom-40">
+                    <div class="uk-width-1-2">
+                        <h4 class="head-title">Components</h4>
+                    </div>
+                    <div class="uk-width-1-2 uk-flex uk-flex-right blockit-notif">
+                        <button id="save-components" class="uk-button uk-button-primary uk-border-rounded"><i class="fas fa-save fa-sm uk-margin-small-right"></i>Save components</button>
+                    </div>
+                </div>
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <div class="components-wrap" uk-grid>
+                            <div class="uk-width-1-5">
+                                <ul class="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                    <li><a href="#slideshows">Slideshows</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-expand@m">
+                                <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                    <ul id="component-tab-left" class="uk-switcher">
+                                        <li class="slideshows">
+                                            <h4 class="uk-heading-line"><span>Slideshows</span></h4>
+                                            <div class="slideshows-form-wrap uk-margin-medium">
+                                                <ul class="uk-subnav uk-subnav-pill slide-group-nav" data-uk-switcher="animation: uk-animation-fade"></ul>
+                                                <ul class="uk-switcher uk-margin slide-group-content"></ul>
+                                            </div>
+                                        </li>
+                                        <li class="contact">
+                                            <h4 class="uk-heading-line"><span>Contact</span></h4>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="contact-email">Address</label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" id="contact-address-form" data-uk-grid>
+                                                        <div class="uk-width-1-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="contact-email">Email <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Used on the contact form; pos: right"></i></label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" id="contact-email-form" data-uk-grid>
+                                                        <div class="uk-width-1-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                        <div class="uk-width-2-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                        <div class="uk-width-2-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="contact-email">Phone</label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" id="contact-phone-form" data-uk-grid>
+                                                        <div class="uk-width-1-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                        <div class="uk-width-2-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                        <div class="uk-width-2-5">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="contact-map">Map Location <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Use share iframe from google map; pos: right"></i></label>
+                                                    <div class="uk-form-controls">
+                                                        <textarea class="uk-textarea uk-border-rounded" id="contact-map-form" rows="6"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="contact-heading">Form heading text</label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" id="contact-heading-form" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <script src="js/blockit-utilities.min.js"></script>
+    <script src="js/blockit-editor.min.js"></script>
+    <script src="js/vendors/uikit.min.js"></script>
+    <script src="js/vendors/utilities.min.js"></script>
+</body>
+
+</html>

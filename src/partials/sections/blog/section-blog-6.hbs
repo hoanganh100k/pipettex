@@ -1,0 +1,45 @@
+<div class="in-blog-1" data-uk-grid>
+    {{#each blog-page-6.data}}
+    <div class="in-stretch">
+        <article class="uk-card uk-card-default uk-border-rounded">
+            {{#if image}}
+            <div class="uk-card-media-top">
+                <img src="{{../root}}{{image}}" alt="{{title}}">
+            </div>
+            {{/if}}
+            <div class="uk-card-body">
+                <h3>
+                    <a href="{{root}}{{link}}">{{title}}</a>
+                </h3>
+                <p>{{blocks.[0].data.text}}</p>
+                <div class="uk-flex">
+                    {{#if @root.blog-page-6.display_author}}
+                    <div class="uk-margin-small-right">
+                        <img class="uk-border-pill uk-background-muted" src="{{../root}}{{author.avatar}}" alt="image-team" width="32" height="32">
+                    </div>
+                    <div class="uk-flex uk-flex-middle">
+                        <p class="uk-text-small uk-text-muted uk-margin-remove">
+                            {{author.name}}
+                            <span class="uk-margin-small-left uk-margin-small-right">•</span>
+                        </p>
+                    </div>
+                    {{/if}}
+                    <div class="uk-flex uk-flex-middle">
+                        <p class="uk-text-small uk-text-muted uk-margin-remove">
+                            {{date}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card-footer uk-clearfix">
+                <div class="uk-float-left">
+                    <a href="#"><span class="uk-label uk-label-warning in-label-small">{{category}}</span></a>
+                </div>
+                <div class="uk-float-right">
+                    <a href="{{root}}{{link}}" class="uk-button uk-button-text">Read more<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                </div>
+            </div>
+        </article>
+    </div>
+    {{/each}}
+</div>

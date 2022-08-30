@@ -1,0 +1,95 @@
+{
+  "slideshows": [
+    {
+      "backgroundImage": "optional",
+      "slides": [
+        {
+          "notification": {
+            "enabled": true,
+            "text": "Trade the markets directly with leading trading platforms."
+          },
+          "heading": "The world's most <span class=\"in-highlight\">powerful</span> trade app.",
+          "text": "Get the most accurate market data, alerts, conversions, tools and more — all within the same app.",
+          "slideImage": "img/in-equity-slide-1.png",
+          "stockPrice": {
+            "enabled": true,
+            "stock": [
+              {
+                "symbol": "TSLA",
+                "logo": "img/in-symbol-tesla.svg"
+              },
+              {
+                "symbol": "GOOGL",
+                "logo": "img/in-symbol-google.svg"
+              },
+              {
+                "symbol": "AAPL",
+                "logo": "img/in-symbol-apple.svg"
+              }
+            ]
+          }
+        },
+        {
+          "notification": {
+            "enabled": true,
+            "text": "Trade the markets directly with leading trading platforms."
+          },
+          "heading": "Reach out to new trading <span class=\"in-highlight\">experience</span>.",
+          "text": "Bring your trading ventures go around the world, way beyond the space of your trading account.",
+          "slideImage": "img/in-equity-slide-2.png",
+          "stockPrice": {
+            "enabled": true,
+            "stock": [
+              {
+                "symbol": "MCD",
+                "logo": "img/in-symbol-mcdonalds.svg"
+              },
+              {
+                "symbol": "AMZN",
+                "logo": "img/in-symbol-amazon.svg"
+              },
+              {
+                "symbol": "MSFT",
+                "logo": "img/in-symbol-microsoft.svg"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "backgroundImage": "optional",
+      "slides": []
+    },
+    {
+      "backgroundImage": "optional",
+      "slides": []
+    },
+    {
+      "backgroundImage": "optional",
+      "slides": []
+    }
+  ],
+  "contact": {
+    "address": {
+      "title": "Address",
+      "text": "Satrio Tower 16th, Jl. Dr Satrio Kuningan, Jakarta"
+    },
+    "email": {
+      "title": "Email",
+      "address": "halo@company.com",
+      "text": "for public inquiries"
+    },
+    "phone": {
+      "title": "Call",
+      "number": "(888)234-5686",
+      "text": "Mon - Fri, 9am - 5pm"
+    },
+    "heading": {
+      "text1": "Have a questions?",
+      "text2": "Let's <span class=\"in-highlight\">get in touch</span>"
+    },
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12607.361112413788!2d144.955928!3d-37.81721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1635163568811!5m2!1sen!2sbd\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+    "mapSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12607.361112413788!2d144.955928!3d-37.81721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1635163568811!5m2!1sen!2sbd"
+  }
+}

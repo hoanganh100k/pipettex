@@ -1,0 +1,101 @@
+footer {
+    .uk-link-text {
+        li {
+            a:hover {
+                color: darken($base-primary-color, 12%);
+                text-decoration: none;
+            }
+        }
+    }
+    .in-footer-socials {
+        text-align: right;
+        li {
+            line-height: 36px;
+            a {
+                font-size: 12px;
+                font-weight: 700;
+                color: $base-default-color;
+                border-radius: $base-border-radius-2;
+                padding: 8px 10px;
+                &:hover {
+                    color: $base-default-color;
+                    text-decoration: none;
+                }
+                .fab {
+                    font-size: 15px;
+                    color: $base-default-color;
+                    margin-right: 8px;
+                    position: relative;
+                    top: 1px;
+                }
+                &.fb-bg {
+                    background: #3b5998;
+                    &:hover {
+                        background: lighten(#3b5998, 8%);
+                    }
+                }
+                &.tw-bg {
+                    background: #00acee;
+                    &:hover {
+                        background: lighten(#00acee, 8%);
+                    }
+                }
+                &.yt-bg {
+                    background: #c4302b;
+                    &:hover {
+                        background: lighten(#c4302b, 8%);
+                    }
+                }
+                &.ig-bg {
+                    background: #DD2A7B;
+                    &:hover {
+                        background: lighten(#DD2A7B, 8%);
+                    }
+                }
+                &.tl-bg {
+                    background: #0088CC;
+                    &:hover {
+                        background: lighten(#0088CC, 8%);
+                    }
+                }
+                &.wa-bg {
+                    background: #128c7e;
+                    &:hover {
+                        background: lighten(#128c7e, 8%);
+                    }
+                }
+                &.ld-bg {
+                    background: #0077b5;
+                    &:hover {
+                        background: lighten(#0077b5, 8%);
+                    }
+                }
+                &.be-bg {
+                    background: #1769ff;
+                    &:hover {
+                        background: lighten(#1769ff, 8%);
+                    }
+                }
+            }
+            
+        }
+    }
+    .uk-text-small {
+        color: #999;
+    }
+}
+@media (max-width: 960px) {
+    footer {
+        .in-footer-socials {
+            text-align: left;
+            margin-top: 50px;
+            li {
+                margin: 0 5px;
+                display: inline-block;
+            }
+        }
+        .copyright-text {
+            margin-top: 0;
+        }
+    }
+}

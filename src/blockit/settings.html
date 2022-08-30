@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- standard meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Blockit is really awesome seriously, you must try!">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site properties -->
+    <title>Blockit editor - settings</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader"></div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container uk-container-expand" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo uk-margin-right" href="index.html">
+                                <img class="uk-margin-small-right in-offset-top-10" src="img/blockit-logo.svg" alt="blockit" width="24" height="24">Blockit
+                            </a>
+                            <!-- logo end -->
+                        </div>
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="pages.html"><i class="fas fa-clone fa-sm"></i>Pages</a></li>
+                            <li><a href="navigation.html"><i class="fas fa-compass fa-sm"></i>Navigation</a></li>
+                            <li><a href="posts.html"><i class="fas fa-thumbtack fa-sm"></i>Posts</a></li>
+                            <li><a href="components.html"><i class="fas fa-plug fa-sm"></i>Components</a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog fa-sm"></i>Settings</a></li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-margin-medium-left">
+                            <a href="/" class="uk-button uk-button-primary uk-button-small uk-border-pill" target="_blank"><i class="fas fa-expand"></i>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section blockit-settings">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex uk-flex-middle in-offset-bottom-40">
+                    <div class="uk-width-1-2">
+                        <h4 class="head-title">Settings</h4>
+                    </div>
+                    <div class="uk-width-1-2 uk-flex uk-flex-right blockit-notif">
+                        <button id="save-settings" class="uk-button uk-button-primary uk-border-rounded"><i class="fas fa-save fa-sm uk-margin-small-right"></i>Save settings</button>
+                    </div>
+                </div>
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <div class="setting-wrap" uk-grid>
+                            <div class="uk-width-1-5">
+                                <ul class="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                    <li><a href="#site-info">Site info</a></li>
+                                    <li><a href="#colors">Colors</a></li>
+                                    <li><a href="#header">Header</a></li>
+                                    <li><a href="#footer">Footer</a></li>
+                                    <li><a href="#authors">Authors</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#social-media">Social media</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-expand@m">
+                                <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                    <ul id="component-tab-left" class="uk-switcher">
+                                        <li class="site-info">
+                                            <h4 class="uk-heading-line"><span>Site info</span></h4>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-page-title">Page Title</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-page-title" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-meta-description">Meta description</label>
+                                                    <div class="uk-form-controls">
+                                                        <textarea class="uk-textarea uk-border-rounded" id="setting-meta-description" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-meta-keywords">Meta keywords <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Separate tags with commas; pos: right"></i></label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-meta-keywords" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-meta-author">Meta author</label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select uk-border-rounded" id="setting-meta-author"></select>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-meta-themecolor">Meta theme color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-meta-themecolor">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-favicon">Favicon</label>
+                                                    <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
+                                                        <div class="uk-width-auto setting-favicon">
+                                                            <img src="img/in-lazy.gif" alt="setting-favicon">
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div data-uk-form-custom>
+                                                                <input class="favicon-upload" type="file">
+                                                                <button class="uk-button uk-button-secondary uk-border-rounded upload-favicon-btn" type="button" tabindex="-1"><i class="fas fa-upload fa-sm uk-margin-small-right"></i>Change favicon</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-touch-icon">Touch icon</label>
+                                                    <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
+                                                        <div class="uk-width-auto setting-touch-icon">
+                                                            <img src="img/in-lazy.gif" alt="setting-touch-icon">
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div data-uk-form-custom>
+                                                                <input class="touch-icon-upload" type="file">
+                                                                <button class="uk-button uk-button-secondary uk-border-rounded upload-touch-icon-btn" type="button" tabindex="-1"><i class="fas fa-upload fa-sm uk-margin-small-right"></i>Change icon</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="colors">
+                                            <h4 class="uk-heading-line"><span>Colors</span></h4>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-background-color">Background color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-background-color">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-primary-color">Primary color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-primary-color">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-secondary-color">Secondary color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-secondary-color">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-heading-color">Heading color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-heading-color">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-body-text-color">Body text color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-body-text-color">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-link-color">Link color</label>
+                                                    <div class="uk-form-controls">
+                                                        <div class="uk-input uk-border-rounded uk-flex uk-flex-middle" data-uk-form-custom>
+                                                            <span class="setting-color-box"></span>
+                                                            <input type="color" class="uk-border-rounded" id="setting-link-color">
+                                                            <span class="uk-text-small uk-margin-small-left" tabindex="-1"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="header">
+                                            <h4 class="uk-heading-line"><span>Header</span></h4>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-site-logo">Site logo</label>
+                                                    <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
+                                                        <div class="uk-width-auto setting-site-logo">
+                                                            <img src="img/in-lazy.gif" alt="setting-site-logo">
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div data-uk-form-custom>
+                                                                <input class="site-logo-upload" type="file">
+                                                                <button class="uk-button uk-button-secondary uk-border-rounded upload-logo-btn" type="button" tabindex="-1"><i class="fas fa-upload fa-sm uk-margin-small-right"></i>Change logo</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-logo-dimension">Logo dimension <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Size in pixels; pos: right"></i></label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded setting-number-dimension" id="setting-logo-width" type="number">
+                                                        <span class="uk-text-muted uk-margin-small-left uk-margin-small-right">x</span>
+                                                        <input class="uk-input uk-border-rounded setting-number-dimension" id="setting-logo-height" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-signup">Sign up title &amp; url</label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded" id="setting-signup-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded" id="setting-signup-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-signin">Sign up title &amp; url</label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded" id="setting-signin-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded" id="setting-signin-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="footer">
+                                            <h4 class="uk-heading-line"><span>Footer</span></h4>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-copyright">Footer Content</label>
+                                                    <div class="uk-form-controls">
+                                                        <a href="#setting-footer-html-wrap" id="footer-editor-btn" class="uk-button uk-button-secondary uk-border-rounded" data-uk-toggle><i class="fas fa-code fa-sm uk-margin-small-right"></i>Edit HTML code</a>
+                                                        <div id="setting-footer-html-wrap" class="uk-modal-container uk-flex-top" data-uk-modal>
+                                                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded blockit-code-editor">
+                                                                <div id="editor-footer-html"></div>
+                                                                <div class="uk-flex uk-flex-right">
+                                                                    <button class="uk-button uk-button-secondary uk-border-rounded uk-modal-close" type="button">Cancel</button>
+                                                                    <button id="footer-editor-save-btn" class="uk-button uk-button-primary uk-border-rounded uk-margin-small-left" type="button">Save code</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-copyright">Copyright text</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-copyright" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-link">Footer link</label>
+                                                    <div class="uk-form-controls uk-form-controls-text">
+                                                        <label class="uk-margin-right"><input class="uk-radio" type="radio" value="enable" name="setting-footer-link"> Enable</label>
+                                                        <label><input class="uk-radio" type="radio" value="disable" name="setting-footer-link"> Disable</label>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-link-1"><span class="uk-margin-left">Link title &amp; url</span> <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Leave blank if you don't want use; pos: right"></i></label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-link-2"><span class="uk-margin-left">Link title &amp; url</span> <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Leave blank if you don't want use; pos: right"></i></label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-link-3"><span class="uk-margin-left">Link title &amp; url</span> <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Leave blank if you don't want use; pos: right"></i></label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-link-2"><span class="uk-margin-left">Link title &amp; url</span> <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Leave blank if you don't want use; pos: right"></i></label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-link-2"><span class="uk-margin-left">Link title &amp; url</span> <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Leave blank if you don't want use; pos: right"></i></label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-title" type="text">
+                                                        </div>
+                                                        <div class="uk-width-1-2">
+                                                            <input class="uk-input uk-border-rounded setting-footer-link-url" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-footer-payment">Payment logo</label>
+                                                    <div class="uk-form-controls uk-form-controls-text">
+                                                        <label class="uk-margin-right"><input class="uk-radio" type="radio" value="enable" name="setting-footer-payment"> Enable</label>
+                                                        <label><input class="uk-radio" type="radio" value="disable" name="setting-footer-payment"> Disable</label>
+                                                        <div class="uk-form-stacked uk-grid-small uk-grid uk-margin setting-footer-payment-wrap" data-uk-grid>
+                                                            <div class="uk-width-1-6">
+                                                                <div class="uk-flex uk-flex-bottom" data-uk-form-custom>
+                                                                    <div class="uk-inline-clip uk-transition-toggle setting-footer-payment-logo" tabindex="0">
+                                                                        <img src="img/in-lazy.gif" alt="setting-footer-payment">
+                                                                        <div class="uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+                                                                            <input class="footer-payment-upload" type="file">
+                                                                            <button class="uk-button fas fa-camera uk-label uk-border-pill" type="button" tabindex="-1"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-width-auto">
+                                                                <input class="uk-input uk-border-rounded setting-number-dimension" type="number">
+                                                                <span class="uk-text-muted uk-margin-small-left uk-margin-small-right">x</span>
+                                                                <input class="uk-input uk-border-rounded setting-number-dimension" type="number">
+                                                            </div>
+                                                            <div class="uk-width-auto">
+                                                                <label class="uk-form-label" for="setting-footer-payment"><i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Size in pixels; pos: right" title="" aria-expanded="false" tabindex="0"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-form-stacked uk-grid-small uk-grid uk-margin setting-footer-payment-wrap" data-uk-grid>
+                                                            <div class="uk-width-1-6">
+                                                                <div class="uk-flex uk-flex-bottom" data-uk-form-custom>
+                                                                    <div class="uk-inline-clip uk-transition-toggle setting-footer-payment-logo" tabindex="0">
+                                                                        <img src="img/in-lazy.gif" alt="setting-footer-payment">
+                                                                        <div class="uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+                                                                            <input class="footer-payment-upload" type="file">
+                                                                            <button class="uk-button fas fa-camera uk-label uk-border-pill" type="button" tabindex="-1"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-width-auto">
+                                                                <input class="uk-input uk-border-rounded setting-number-dimension" type="number">
+                                                                <span class="uk-text-muted uk-margin-small-left uk-margin-small-right">x</span>
+                                                                <input class="uk-input uk-border-rounded setting-number-dimension" type="number">
+                                                            </div>
+                                                            <div class="uk-width-auto">
+                                                                <label class="uk-form-label" for="setting-footer-payment"><i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Size in pixels; pos: right" title="" aria-expanded="false" tabindex="0"></i></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="authors">
+                                            <h4 class="uk-heading-line"><span>Authors</span></h4>
+                                            <div class="authors-form-wrap uk-margin-medium"></div>
+                                            <hr>
+                                            <div class="uk-width-1-1 uk-flex uk-flex-right uk-margin-small-bottom">
+                                                <button id="add-author" class="uk-button uk-button-secondary uk-border-rounded"><i class="fas fa-plus-circle fa-sm uk-margin-small-right"></i>Add new author</button>
+                                            </div>
+                                        </li>
+                                        <li class="blog">
+                                            <h4 class="uk-heading-line"><span>Blog</span></h4>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-posts-per-page">Categories</label>
+                                                    <div class="uk-form-stacked uk-grid-small uk-grid" data-uk-grid>
+                                                        <div class="uk-width-expand">
+                                                            <input class="uk-input uk-border-rounded" id="setting-category-input" type="text" placeholder="Add new category...">
+                                                        </div>
+                                                        <div class="uk-width-auto">
+                                                            <button id="setting-category-btn" class="uk-button uk-button-secondary uk-border-rounded uk-width-1-1"><i class="fas fa-plus-circle fa-sm uk-margin-small-right"></i>Add</button>
+                                                        </div>
+                                                        <div id="setting-category-list" class="uk-width-1-1"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-posts-per-page">Posts per page</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded setting-number-dimension" id="setting-posts-per-page" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-show-widgets">Show widgets</label>
+                                                    <div class="uk-form-controls uk-form-controls-text">
+                                                        <label><input class="uk-checkbox" type="checkbox" id="setting-widget-categories"> Categories</label><br>
+                                                        <label><input class="uk-checkbox" type="checkbox" id="setting-widget-latest"> Latest posts</label><br>
+                                                        <label><input class="uk-checkbox" type="checkbox" id="setting-widget-tags"> Tags</label>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-display-author">Display author</label>
+                                                    <div class="uk-form-controls uk-form-controls-text">
+                                                        <label class="uk-margin-right"><input class="uk-radio" type="radio" value="enable" name="setting-display-author"> Enable</label>
+                                                        <label><input class="uk-radio" type="radio" value="disable" name="setting-display-author"> Disable</label>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-display-tags">Display tags</label>
+                                                    <div class="uk-form-controls uk-form-controls-text">
+                                                        <label class="uk-margin-right"><input class="uk-radio" type="radio" value="enable" name="setting-display-tags"> Enable</label>
+                                                        <label><input class="uk-radio" type="radio" value="disable" name="setting-display-tags"> Disable</label>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-display-share">Display share buttons</label>
+                                                    <div class="uk-form-controls uk-form-controls-text">
+                                                        <label class="uk-margin-right"><input class="uk-radio" type="radio" value="enable" name="setting-display-share"> Enable</label>
+                                                        <label><input class="uk-radio" type="radio" value="disable" name="setting-display-share"> Disable</label>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-disquss">Disquss shortname <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Used for comments on blogs; pos: right"></i></label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-disquss" type="text">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li class="social-media">
+                                            <h4 class="uk-heading-line"><span>Social media</span></h4>
+                                            <span class="uk-text-small uk-text-muted setting-info"><i class="fas fa-info-circle fa-xs uk-margin-small-right"></i>Leave blank if you don't want use</span>
+                                            <form class="uk-form-horizontal uk-margin-medium">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-facebook"><i class="fab fa-facebook-square fa-lg uk-margin-small-right"></i>Facebook</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-facebook" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-twitter"><i class="fab fa-twitter fa-lg uk-margin-small-right"></i>Twitter</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-twitter" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-instagram"><i class="fab fa-instagram fa-lg uk-margin-small-right"></i>Instagram</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-instagram" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-linkedin"><i class="fab fa-linkedin fa-lg uk-margin-small-right"></i>Linkedin</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-linkedin" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-behance"><i class="fab fa-behance fa-lg uk-margin-small-right"></i>Behance</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-behance" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-whatsapp"><i class="fab fa-whatsapp fa-lg uk-margin-small-right"></i>Whatsapp</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-whatsapp" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-telegram"><i class="fab fa-telegram-plane fa-lg uk-margin-small-right"></i>Telegram</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-telegram" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="setting-social-youtube"><i class="fab fa-youtube fa-lg uk-margin-small-right"></i>Youtube</label>
+                                                    <div class="uk-form-controls">
+                                                        <input class="uk-input uk-border-rounded" id="setting-social-youtube" type="text">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <script src="js/blockit-tag.js"></script>
+    <script src="js/blockit-utilities.min.js"></script>
+    <script src="js/blockit-editor.min.js"></script>
+    <script src="js/vendors/editorjs.min.js"></script>
+    <script src="js/vendors/uikit.min.js"></script>
+    <script src="js/vendors/utilities.min.js"></script>
+</body>
+
+</html>

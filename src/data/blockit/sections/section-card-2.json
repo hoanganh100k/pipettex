@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-card-2",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-2-3@m\">\n                <div class=\"uk-child-width-1-2@m\" data-uk-grid>\n                    <div>\n                        <div class=\"uk-card uk-card-default uk-border-rounded\">\n                            <div class=\"uk-card-body\">\n                                <h4 class=\"uk-margin-remove-bottom\">Some cool tagline</h4>\n                                <p class=\"uk-margin-small-top\">Excepteur sint occaecat cupidatat proident in culpa qui officia deserunt mollit anim aliquip laborum.</p>\n                            </div>\n                            <div class=\"uk-card-media-bottom uk-text-center\">\n                                <img src=\"img/blockit/in-card-image-3.png\" alt=\"sample-image\">\n                            </div>\n                        </div>\n                    </div>\n                    <div>\n                        <div class=\"uk-card uk-card-default uk-border-rounded\">\n                            <div class=\"uk-card-media-top uk-text-center\">\n                                <img src=\"img/blockit/in-card-image-4.png\" alt=\"sample-image\">\n                            </div>\n                            <div class=\"uk-card-body\">\n                                <h4 class=\"uk-margin-remove-bottom\">Some cool tagline</h4>\n                                <p class=\"uk-margin-small-top\">Excepteur sint occaecat cupidatat proident in culpa qui officia deserunt mollit anim aliquip laborum.</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+#disqus_thread {
+    overflow: hidden;
+    &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 106px;
+        bottom: -41px;
+        position: relative;
+        background: $base-primary-color;
+    }
+    iframe {
+        margin-bottom: -54px;
+    }
+}
+
+@-moz-document url-prefix() {
+    #disqus_thread {
+        &::before {
+            width: 103px;
+        }
+    }
+}
+
+.in-disqus-util {
+    margin-top: -59px;
+    .hide-privacy-policy {
+        content: "";
+        display: block;
+        height: 39px;
+        width: 298px;
+        left: 104px;
+        bottom: -59px;
+        position: relative;
+        background: $base-container-color;
+    }
+    .hide-share-button {
+        content: "";
+        display: block;
+        height: 20px;
+        width: 290px;
+        bottom: -74px;
+        position: relative;
+        background: $base-container-color;
+    }
+}
+@media (max-width: 960px) {
+    .in-disqus-util {
+        margin-top: -30px;
+        margin-bottom: -30px;
+        .hide-privacy-policy {
+            width: 200px;
+            left: 100px;
+            bottom: -29px;
+            background: $base-container-color;
+        }
+        .hide-share-button {
+            height: 20px;
+            width: 200px;
+            bottom: -42px;
+            background: $base-container-color;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-disqus-util {
+        margin-top: -30px;
+        margin-bottom: -30px;
+        .hide-privacy-policy {
+            width: 290px;
+            left: 105px;
+            bottom: -29px;
+            background: $base-container-color;
+        }
+        .hide-share-button {
+            height: 22px;
+            width: 250px;
+            bottom: -45px;
+            background: $base-container-color;
+        }
+    }
+}

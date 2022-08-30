@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-testimonial-8",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-child-width-1-2@m in-testimonial-8\" data-uk-grid>\n            <div>\n                <div class=\"uk-card uk-card-default uk-box-shadow-small uk-border-rounded\">\n                    <img class=\"uk-position-bottom-right\" src=\"img/blockit/in-testimoni-2.png\" alt=\"client-testimoni\" width=\"200\">\n                    <div class=\"uk-card-header\">\n                        <blockquote>\n                            <p>The extension makes collecting feedback so much easier! Shipright then really helps us make decisions based on the data we collected.</p>\n                        </blockquote>\n                    </div>\n                    <div class=\"uk-card-footer\">\n                        <img src=\"img/blockit/in-client-testi-1.svg\" alt=\"client-logo\" width=\"54\">\n                        <blockquote>\n                            <footer>Gabrielle Barger<br><cite>Help Desk at pushbullet</cite></footer>\n                        </blockquote>\n                    </div>\n                </div>\n            </div>\n            <div>\n                <div class=\"uk-card uk-card-default uk-box-shadow-small uk-border-rounded\">\n                    <img class=\"uk-position-bottom-right\" src=\"img/blockit/in-testimoni-3.png\" alt=\"client-testimoni\" width=\"200\">\n                    <div class=\"uk-card-header\">\n                        <blockquote>\n                            <p>Quick, easy, and super helpful to collect and organise feedback from all kinds of channels we use to communicate with our customers.</p>\n                        </blockquote>\n                    </div>\n                    <div class=\"uk-card-footer\">\n                        <img src=\"img/blockit/in-client-testi-2.svg\" alt=\"client-logo\" width=\"54\">\n                        <blockquote>\n                            <footer>Melvin Cortez<br><cite>Cloud Architect at stormpath</cite></footer>\n                        </blockquote>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

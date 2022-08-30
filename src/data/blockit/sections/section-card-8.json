@@ -1,0 +1,14 @@
+{
+  "time": 1630317629511,
+  "blocks": [
+    {
+      "id": "section-card-8",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\">\n            <div class=\"uk-width-1-1 in-card-8\">\n                <div class=\"uk-card uk-card-body uk-box-shadow-small uk-border-rounded\">\n                    <div class=\"uk-grid uk-grid-divider uk-child-width-1-4@m uk-text-center in-margin-top@s in-margin-bottom@s\" data-uk-grid>\n                        <div>\n                            <h2 class=\"uk-margin-remove-bottom\">#1</h2>\n                            <p class=\"uk-text-muted uk-margin-remove-top\">for spreads^</p>\n                        </div>\n                        <div>\n                            <h2 class=\"uk-margin-remove-bottom\">~30ms</h2>\n                            <p class=\"uk-text-muted uk-margin-remove-top\">executions speed*</p>\n                        </div>\n                        <div>\n                            <h2 class=\"uk-margin-remove-bottom\">24/5</h2>\n                            <p class=\"uk-text-muted uk-margin-remove-top\">customer support</p>\n                        </div>                        \n                        <div>\n                            <h2 class=\"uk-margin-remove-bottom\">150+</h2>\n                            <p class=\"uk-text-muted uk-margin-remove-top\">trading instruments</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ],
+  "version": "2.21.0"
+}

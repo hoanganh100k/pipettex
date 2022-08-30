@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-equity-6",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section uk-section-primary uk-preserve-color in-equity-6 uk-background-contain uk-background-center\" data-src=\"img/in-equity-decor-2.svg\" data-uk-img>\n    <div class=\"uk-container uk-margin-small-bottom\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-2xlarge@m uk-text-center\">\n                <h1>Ready to get started?</h1>\n                <p class=\"uk-text-lead\">Global access to financial markets from a single account</p>\n            </div>\n            <div class=\"uk-width-3-4@m uk-margin-medium-top\">\n                <div class=\"uk-flex uk-flex-center uk-flex-middle button-app\">\n                    <div>\n                        <a href=\"#\" class=\"uk-button uk-button-secondary uk-border-rounded\">Open your account<i class=\"fas fa-arrow-circle-right uk-margin-small-left\"></i></a>\n                    </div>\n                    <div class=\"uk-margin-left uk-margin-right\">\n                        <p class=\"uk-margin-remove\">And download the app</p>\n                    </div>\n                    <div class=\"uk-margin-right\">\n                        <a href=\"#\"><img src=\"img/in-lazy.gif\" data-src=\"img/in-app-store.svg\" alt=\"app-store\" width=\"120\" height=\"40\" data-uk-img></a>\n                    </div>\n                    <div>\n                        <a href=\"#\"><img src=\"img/in-lazy.gif\" data-src=\"img/in-google-play.svg\" alt=\"google-play\" width=\"135\" height=\"40\" data-uk-img></a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

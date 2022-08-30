@@ -1,0 +1,14 @@
+{
+  "time": 1629984005780,
+  "blocks": [
+    {
+      "id": "section-feature-18",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-3-4@m\">\n                <h4 class=\"uk-text-primary uk-margin-remove-bottom\">What is this</h4>\n                <h1 class=\"uk-margin-small-top uk-margin-remove-bottom\">Blockit section collections</h1>\n                <h1 class=\"uk-margin-remove-top\">awesome tools for everyone</h1>\n                <div class=\"uk-grid uk-child-width-1-2@m uk-margin-large-top\" data-uk-grid>\n                    <div>\n                        <h3>Feature heading</h3>\n                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>\n                    </div>\n                    <div>\n                        <h3>Feature heading</h3>\n                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ],
+  "version": "2.21.0"
+}

@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-content-7",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\" data-uk-grid>\n            <div class=\"uk-width-3-5@m\">\n                <h1 class=\"uk-margin-remove\"><span class=\"in-highlight\">Knowledge</span> is a wise investment</h1>\n                <p class=\"uk-text-lead uk-text-muted\">By combining easy-to-understand information with actionable insights, Our company helps make the market seem less daunting—and more approachable.</p>                \n                <span class=\"uk-label uk-border-rounded\"><i class=\"fas fa-book fa-sm uk-margin-small-right uk-visible@s\"></i>Learn</span>\n                <i class=\"fas fa-long-arrow-alt-right fa-sm uk-margin-small-left uk-margin-small-right\"></i>\n                <span class=\"uk-label uk-border-rounded\"><i class=\"fas fa-lightbulb fa-sm uk-margin-small-right uk-visible@s\"></i>Understand</span>\n                <i class=\"fas fa-long-arrow-alt-right fa-sm uk-margin-small-left uk-margin-small-right\"></i>\n                <span class=\"uk-label uk-border-rounded\"><i class=\"fas fa-chart-area fa-sm uk-margin-small-right uk-visible@s\"></i>Trade</span>                \n            </div>\n            <div class=\"uk-width-2-5@m\">\n                <div class=\"uk-card uk-card-default uk-card-body uk-border-rounded\">                    \n                    <div class=\"uk-grid uk-grid-small\">\n                        <div class=\"uk-width-expand@m\">\n                            <h3 class=\"uk-margin-remove-bottom\">Trader Academy</h3>\n                            <p class=\"uk-margin-small-top\">Reprehenderit in voluptate velit esse cillum dolore laboris aute irure.</p>\n                            <a class=\"uk-button uk-button-primary uk-border-rounded\" href=\"#\">Start Learning<i class=\"fas fa-arrow-circle-right uk-margin-small-left\"></i></a>\n                        </div>\n                        <div class=\"uk-width-auto@m uk-visible@m\">\n                            <div class=\"in-icon-wrapper transparent uk-margin-top\">\n                                <i class=\"fas fa-user-graduate fa-5x\"></i>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

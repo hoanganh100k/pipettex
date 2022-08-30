@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-card-5",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\" data-uk-grid>\n            <div class=\"uk-width-1-2@m\">\n                <div class=\"uk-inline uk-width-1-1 in-card-4\">\n                    <img class=\"uk-align-right uk-margin-remove-bottom\" src=\"img/blockit/in-card-image-5.jpg\" width=\"380\" height=\"420\" alt=\"sample-image\">\n                    <div class=\"uk-position-left uk-flex uk-flex-middle uk-width-3-4 uk-width-3-5@m\">\n                        <div class=\"uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded\">\n                            <span class=\"uk-label uk-margin-remove-bottom\">cool label</span>\n                            <h4 class=\"uk-margin-small-top uk-margin-remove-bottom\">Services tagline</h4>\n                            <p class=\"uk-margin-small-top\">Excepteur sint occaecat cupidatat non proident sunt culpa officia.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"uk-width-1-2@m\">\n                <div class=\"uk-inline uk-width-1-1 in-card-4\">\n                    <img class=\"uk-align-left uk-margin-remove-bottom\" src=\"img/blockit/in-card-image-6.jpg\" width=\"380\" height=\"420\" alt=\"sample-image\">\n                    <div class=\"uk-position-right uk-flex uk-flex-middle uk-width-3-4 uk-width-3-5@m\">\n                        <div class=\"uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded\">\n                            <span class=\"uk-label uk-margin-remove-bottom\">cool label</span>\n                            <h4 class=\"uk-margin-small-top uk-margin-remove-bottom\">Services tagline</h4>\n                            <p class=\"uk-margin-small-top\">Excepteur sint occaecat cupidatat non proident sunt culpa officia.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

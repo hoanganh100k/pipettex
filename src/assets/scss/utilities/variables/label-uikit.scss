@@ -1,0 +1,17 @@
+@import "../../base/base-variables.scss";
+
+// uikit label variables
+// ========================================================================
+$label-padding-vertical:                         7px !default;
+$label-padding-horizontal:                       16px !default;
+
+$label-font-size:                                0.813rem !default;
+
+$label-background:                               lighten(#2788ed, 32%) !default;
+$label-color:                                    darken(#2788ed, 3%) !default;
+$label-success-background:                       lighten(#3bd297, 32%) !default;
+$label-success-color:                            darken(#3bd297, 12%) !default;
+$label-danger-background:                        lighten(#ee4f6f, 28%) !default;
+$label-danger-color:                             darken(#ee4f6f, 9%) !default;
+$label-warning-background:                       lighten($base-primary-color, 29%) !default;
+$label-warning-color:                            darken($base-primary-color, 12%) !default;

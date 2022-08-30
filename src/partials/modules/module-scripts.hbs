@@ -1,0 +1,12 @@
+<!-- javascript -->
+<script src="{{root}}js/vendors/uikit.min.js"></script>
+<script src="{{root}}js/vendors/utilities.min.js"></script>
+{{#ifpage 'index' 'homepage2'}}
+<script src="{{root}}js/vendors/trading-widget.min.js"></script>
+{{/ifpage}}
+{{#ifpage 'index' 'homepage2' 'homepage3' 'homepage4'}}
+<script src="{{root}}js/vendors/market-plugin.min.js"></script>
+<script src="{{root}}js/vendors/particles.min.js"></script>
+<script src="{{root}}js/config-particles.js"></script>
+{{/ifpage}}
+<script src="{{root}}js/config-theme.js"></script>

@@ -1,0 +1,46 @@
+{
+  "name": "blockit",
+  "version": "2.0.1",
+  "description": "blockit, a HTML static builder from Indonez",
+  "private": true,
+  "scripts": {
+    "build": "gulp build --gulpfile blockit.js",
+    "blockit": "gulp blockit --gulpfile blockit.js",
+    "minify": "gulp minify --gulpfile blockit.js"
+  },
+  "keywords": [
+    "handlebars",
+    "panini",
+    "uikit3",
+    "gulp"
+  ],
+  "browserslist": [
+    "last 2 years"
+  ],
+  "author": "mudza09",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-jsbeautifier": "^3.0.1",
+    "gulp-minifier": "^3.5.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "merge-stream": "^2.0.0",
+    "panini": "^1.7.2",
+    "postcss": "^8.3.5",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-merge-longhand": "^5.0.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "uikit": "^3.7.2"
+  }
+}

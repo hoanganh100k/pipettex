@@ -1,0 +1,201 @@
+.in-slideshow-gradient {
+    background: rgb(38,38,40);
+    background: linear-gradient(0deg, rgba(38,38,40,1) 0%, rgba(24,24,24,1) 80%, rgba(24,24,24,1) 100%);
+    margin-top: -92px;
+}
+
+.in-slideshow {
+    padding-top: 92px;
+    height: 580px;
+    &.uk-background-contain {
+        background-size: 1254px 710px;
+        background-position: 84% -38px;
+    }
+    .particles-js-canvas-el {
+        position: relative;
+        top: -810px;
+    }
+    hr {
+        position: relative;
+        z-index: 1;
+        border-top-color: rgba(255,255,255, 0.1);
+    }    
+    .uk-container {      
+        width: 100%;  
+        position: relative;
+    }
+    .uk-slideshow-items {
+        z-index: 1;
+        height: 746px;
+        top: -86px;
+    }
+    .in-badge-text {
+        height: 21px;
+        color: #cacdd1;
+        display: inline-block;
+        background: rgba(255,255,255, 0.2);
+        border-radius: 7px;
+        padding: 7px 16px 6px 16px;
+        .uk-label {
+            color: $base-default-color;
+            background: #4886d9;
+            margin: -2px 14px 0 -10px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+    .in-slide-text {
+        margin-top: -59px;
+        .uk-text-lead {
+            margin-top: 30px;
+        }
+    }
+    .in-slide-img {
+        position: absolute;
+        right: 2px;
+        animation: float 6s ease-in-out infinite;
+    }
+    .uk-card-small {
+        padding: 13px 12px 11px 16px;
+    }
+    .uk-card-secondary {
+        background: rgba(0, 0, 0, 0.2);
+        h6 {
+            font-size: 11px;
+            span.uk-text-small {
+                color: #acacac;
+                font-size: 11px;
+                font-weight: 300;
+                margin-left: 10px;
+            }
+        }
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            span.fa-arrow-circle-right,
+            span.fa-spinner {
+                font-size: 11px;
+                margin: 5px 5px 0 0;
+                float: left;
+            }
+            span.fa-spinner::before {
+                width: 11px;
+                display: block;
+                animation: rotate 2s linear infinite
+            }
+            @keyframes rotate{
+                from{
+                    -webkit-transform: rotate(0deg);
+                }
+                to{
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    .in-symbol-logo {
+        img {
+            margin: -3px 12px 0 0;
+        }
+    }
+    .in-price {
+        &.up {
+            p {
+                color: #2db47f;
+                span.fa-arrow-circle-right {
+                    display: inline-block;
+                    transform: rotate(-40deg);
+                }
+            }
+        }
+        &.down {
+            p {
+                color: #ec4e70;
+                span.fa-arrow-circle-right {
+                    display: inline-block;
+                    transform: rotate(40deg);
+                }
+            }
+        }
+    }
+    .uk-dotnav {
+        margin-bottom: 245px;
+        z-index: 2;
+        li {
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+}
+@media (max-width: 960px) {
+    .in-slideshow-gradient {
+        height: 580px;
+    }
+    .in-slideshow {
+        &.uk-background-contain {
+            background-size: 1100px 623px;
+            background-position: -5% -38px;
+        }
+        .particles-js-canvas-el {
+            top: -691px;
+        }
+        .uk-slideshow-items {
+            height: 486px;
+            top: -20px;
+        }
+        .in-slide-text {
+            text-align: center;
+            margin-top: -350px;
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+        .in-slide-img {
+            width: 80%;
+            top: -118px;
+            right: 10%;
+        }
+        .uk-dotnav {
+            margin-bottom: 80px;
+            right: 8%;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .in-slideshow-gradient {
+        height: 532px;
+    }
+    .in-slideshow {
+        &.uk-background-contain {
+            background-position: -15% -38px;
+        }
+        .particles-js-canvas-el {
+            top: -601px;
+        }
+        .uk-slideshow-items {
+            height: 440px;
+        }
+        .in-slide-text {
+            text-align: left;
+            margin-top: -65px;
+        }
+        .in-slide-img {
+            width: 45%;
+            right: 3%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "time": 1630317891351,
+  "blocks": [
+    {
+      "id": "section-card-15",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid\">\n            <div class=\"uk-width-1-1\">\n                <div class=\"uk-card uk-card-secondary uk-card-body uk-border-rounded\">\n                    <div class=\"uk-grid-divider uk-child-width-1-2@m\" data-uk-grid>\n                        <div>\n                            <i class=\"fas fa-chart-pie fa-3x\"></i>\n                            <h3 class=\"uk-margin-top uk-margin-remove-bottom\">Budgets reporting</h3>\n                            <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis voluptas assumenda estrerum voluptatibus.</p>\n                            <a class=\"uk-button uk-button-primary uk-border-rounded uk-margin-top\" href=\"#\">Request more info <i class=\"fas fa-angle-right fa-sm uk-margin-small-left\"></i></a>\n                        </div>\n                        <div>\n                            <i class=\"fas fa-file-alt fa-3x\"></i>\n                            <h3 class=\"uk-margin-top uk-margin-remove-bottom\">Enterprise solution</h3>\n                            <p>Omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint etnon molestiae.</p>\n                            <a class=\"uk-button uk-button-primary uk-border-rounded uk-margin-top\" href=\"#\">Request more info <i class=\"fas fa-angle-right fa-sm uk-margin-small-left\"></i></a>\n                        </div>\n                    </div>                    \n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ],
+  "version": "2.21.0"
+}

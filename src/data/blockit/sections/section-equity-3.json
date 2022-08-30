@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-equity-3",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section in-equity-3 in-offset-top-20\">\n    <div class=\"uk-container uk-margin-large-bottom\">\n        <div class=\"uk-grid uk-flex uk-flex-middle\">\n            <div class=\"uk-width-expand@m\">\n                <h1 class=\"uk-margin-small-bottom\">Tight spreads and <span class=\"in-highlight\">ultra-fast</span> execution</h1>\n                <h3 class=\"uk-margin-top uk-text-warning\">Best market prices available so you can receive excellent conditions.</h3>\n                <hr class=\"uk-margin-medium-top uk-margin-medium-bottom\">\n                <ul class=\"uk-list in-list-check\">\n                    <li>Negative balance protection</li>\n                    <li>Segregated and supervised client funds</li>\n                    <li>Instant deposit & fast withdrawal</li>\n                </ul>\n            </div>\n            <div class=\"uk-width-2xlarge uk-flex uk-flex-right uk-flex-center@s\">\n                <div class=\"uk-card uk-card-body uk-card-default uk-border-rounded in-margin-top-60@s\">\n                    <div id=\"tradingview-widget\"></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

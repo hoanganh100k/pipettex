@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "footer-content",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<div class=\"uk-child-width-1-2@s uk-child-width-1-3@m\" data-uk-grid>\n    <div>\n        <h5>Instruments</h5>\n        <ul class=\"uk-list uk-link-text\">\n            <li><a href=\"#\">Stock</a></li>\n            <li><a href=\"#\">Indexes</a></li>\n            <li><a href=\"#\">Currencies</a></li>\n            <li><a href=\"#\">Metals<span class=\"uk-label uk-margin-small-left in-label-small\">Popular</span></a></li>\n            <li><a href=\"#\">Oil and gas</a></li>\n            <li><a href=\"#\">Cryptocurrencies<span class=\"uk-label uk-margin-small-left in-label-small\">Popular</span></a></li>\n        </ul>\n    </div>\n    <div>\n        <h5>Analytics</h5>\n        <ul class=\"uk-list uk-link-text\">\n            <li><a href=\"#\">World Markets</a></li>\n            <li><a href=\"#\">Trading Central<span class=\"uk-label uk-margin-small-left in-label-small\">New</span></a></li>\n            <li><a href=\"#\">Forex charts online</a></li>\n            <li><a href=\"#\">Market calendar</a></li>\n            <li><a href=\"#\">Central banks<span class=\"uk-label uk-margin-small-left in-label-small\">New</span></a></li>\n        </ul>\n    </div>\n    <div class=\"in-margin-top-60@s\">\n        <h5>Education</h5>\n        <ul class=\"uk-list uk-link-text\">\n            <li><a href=\"#\">Basic course</a></li>\n            <li><a href=\"#\">Introductory webinar</a></li>\n            <li><a href=\"#\">About academy</a></li>\n        </ul>\n    </div>\n</div>"
+      }
+    }
+  ]
+}

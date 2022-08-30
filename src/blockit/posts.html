@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- standard meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Blockit is really awesome seriously, you must try!">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site properties -->
+    <title>Blockit editor - posts</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader"></div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container uk-container-expand" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo uk-margin-right" href="index.html">
+                                <img class="uk-margin-small-right in-offset-top-10" src="img/blockit-logo.svg" alt="blockit" width="24" height="24">Blockit
+                            </a>
+                            <!-- logo end -->
+                        </div>
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="pages.html"><i class="fas fa-clone fa-sm"></i>Pages</a></li>
+                            <li><a href="navigation.html"><i class="fas fa-compass fa-sm"></i>Navigation</a></li>
+                            <li><a href="posts.html"><i class="fas fa-thumbtack fa-sm"></i>Posts</a></li>
+                            <li><a href="components.html"><i class="fas fa-plug fa-sm"></i>Components</a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog fa-sm"></i>Settings</a></li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-margin-medium-left">
+                            <a href="/" class="uk-button uk-button-primary uk-button-small uk-border-pill" target="_blank"><i class="fas fa-expand"></i>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section blockit-pages blockit-posts">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex uk-flex-middle in-offset-bottom-40">
+                    <div class="uk-width-1-4">
+                        <h4 class="head-title">Posts</h4>
+                    </div>
+                    <div class="uk-width-3-4 uk-flex uk-flex-right blockit-notif">
+                        <button id="add-post" class="uk-button uk-button-primary uk-border-rounded"><i class="fas fa-plus-circle fa-sm uk-margin-small-right"></i>Add new post</button>
+                    </div>
+                </div>
+                <div class="uk-grid">
+                    <div class="uk-width-1-1 uk-margin-top">
+                        <table class="uk-table uk-table-divider uk-table-hover uk-table-middle">
+                            <thead>
+                                <tr>
+                                    <th class="uk-width-large">Post title</th>
+                                    <th class="uk-width-small">Modified</th>
+                                    <th class="uk-width-small">Author</th>
+                                    <th class="uk-width-small">Category</th>
+                                    <th class="uk-width-small"></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <script src="js/blockit-tag.js"></script>
+    <script src="js/blockit-utilities.min.js"></script>
+    <script src="js/blockit-editor.min.js"></script>
+    <script src="js/vendors/uikit.min.js"></script>
+    <script src="js/vendors/utilities.min.js"></script>
+</body>
+
+</html>

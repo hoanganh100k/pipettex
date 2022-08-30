@@ -1,0 +1,15 @@
+<!-- widget popular begin -->
+<aside class="uk-margin-medium-bottom">
+    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+        <h5 class="uk-heading-bullet uk-text-uppercase uk-margin-remove-bottom">Latest News</h5>
+        <ul class="uk-list uk-list-divider uk-list-large in-widget-latest">
+            {{#eachLimit blog.post 3}}
+            <li>
+                <a href="{{root}}{{link}}">{{title}}</a>
+                <span class="uk-article-meta uk-text-small"><br><i class="fas fa-clock fa-sm uk-margin-small-right"></i>{{date}}</span>
+            </li>
+            {{/eachLimit}}
+        </ul>        
+    </div>
+</aside>
+<!-- widget popular end -->

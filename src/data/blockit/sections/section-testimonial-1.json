@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-testimonial-1",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-3-4@m\">\n                <div>\n                    <div class=\"uk-flex uk-flex-middle\" data-uk-grid>\n                        <div class=\"uk-width-1-1 uk-width-expand@m\">\n                            <blockquote>\n                                <p class=\"uk-margin-bottom\">Quick, easy, and super helpful to collect and organise feedback from all kinds of channels we use to communicate with our customers.</p>\n                                <footer>Nina van Adrichem<br><cite>Designer at GWT</cite></footer>\n                            </blockquote>\n                        </div>\n                        <div class=\"uk-width-1-1 uk-width-auto@m uk-margin-medium-left in-margin-remove-left@s uk-flex-first uk-flex-last@m\">\n                            <img class=\"uk-border-pill uk-background-muted uk-align-center uk-margin-remove-bottom\" src=\"img/blockit/in-team-1.png\" alt=\"client-testimoni\" width=\"180\">\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

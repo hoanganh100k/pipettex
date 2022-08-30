@@ -1,0 +1,7 @@
+@import "../../base/base-variables.scss";
+
+// uikit label mixins
+// ========================================================================
+@mixin hook-label(){
+    border-radius: $base-border-radius;
+}

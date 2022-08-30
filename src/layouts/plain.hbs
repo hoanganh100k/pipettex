@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+<head>    
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="{{setting.siteInfo.metaDescription}}">
+    <meta name="keywords" content="{{#each setting.siteInfo.metaKeywords }}{{this}}{{#unless @last}}, {{/unless}}{{/each}}">
+    <meta name="author" content="{{setting.siteInfo.metaAuthor}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{setting.siteInfo.metaThemeColor}}"/>
+    <!-- Site Properties -->
+    <title>{{title}} - {{setting.siteInfo.pageTitle}}</title>
+    {{> module-critical }}
+    <!-- Favicon and apple icon -->
+    <link rel="shortcut icon" href="{{root}}{{setting.siteInfo.favicon}}" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="{{root}}{{setting.siteInfo.touchIcon}}">
+    {{!-- Stylesheet area --}}
+    {{> module-styles }}
+</head>
+
+<body>
+    {{> module-loader}}
+    {{> body}}
+    {{> module-scripts }}    
+</body>
+</html>

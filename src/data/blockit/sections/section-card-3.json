@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-card-3",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-3-4@m in-card-3\">\n                <div class=\"uk-card uk-card-default uk-box-shadow-small uk-border-rounded uk-grid-collapse\" data-uk-grid>\n                    <div class=\"uk-width-2-5@m uk-flex-last@m uk-card-media-right uk-cover-container\">\n                        <img class=\"uk-margin-remove-bottom\" src=\"img/blockit/in-card-image-7.jpg\" alt=\"sample-image\">\n                    </div>\n                    <div class=\"uk-width-expand@m uk-flex uk-flex-middle\">\n                        <div class=\"uk-card-body\">\n                            <h2>Blockit heading 2 feature <span class=\"uk-text-muted\">this is second row</span></h2>\n                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos quidem rerum facilis ratione.</p>\n                            <div class=\"uk-column-1-2@m uk-margin-medium-top\">\n                                <ul class=\"uk-list uk-list-bullet\">\n                                    <li>List item 1</li>\n                                    <li>List item 2</li>\n                                </ul>\n                                <ul class=\"uk-list uk-list-bullet\">\n                                    <li>List item 3</li>\n                                    <li>List item 4</li>\n                                </ul>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- standard meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Blockit is really awesome seriously, you must try!">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site properties -->
+    <title>Blockit editor - navigation</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader"></div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container uk-container-expand" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo uk-margin-right" href="index.html">
+                                <img class="uk-margin-small-right in-offset-top-10" src="img/blockit-logo.svg" alt="blockit" width="24" height="24">Blockit
+                            </a>
+                            <!-- logo end -->
+                        </div>
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="pages.html"><i class="fas fa-clone fa-sm"></i>Pages</a></li>
+                            <li><a href="navigation.html"><i class="fas fa-compass fa-sm"></i>Navigation</a></li>
+                            <li><a href="posts.html"><i class="fas fa-thumbtack fa-sm"></i>Posts</a></li>
+                            <li><a href="components.html"><i class="fas fa-plug fa-sm"></i>Components</a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog fa-sm"></i>Settings</a></li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-margin-medium-left">
+                            <a href="/" class="uk-button uk-button-primary uk-button-small uk-border-pill" target="_blank"><i class="fas fa-expand"></i>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section blockit-nav">
+            <div class="uk-container">
+                <div class="uk-grid uk-flex uk-flex-middle in-offset-bottom-40">
+                    <div class="uk-width-1-2">
+                        <h4 class="head-title">Navigation</h4>
+                    </div>
+                    <div class="uk-width-1-2 uk-flex uk-flex-right blockit-notif">
+                        <button id="add-nav" class="uk-button uk-button-primary uk-border-rounded"><i class="fas fa-plus-circle fa-sm uk-margin-small-right"></i>Add menu item</button>
+                    </div>
+                </div>
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <div class="nav-arrange">
+                            <ul class="as-parent uk-list" data-uk-sortable="handle: .parent-nav; cls-custom: drag-nav"></ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div id="nav-wrap" class="uk-margin-bottom">
+                            <div id="nav-form" hidden>
+                                <h4>Add menu item</h4>
+                                <form id="navigation-form" class="uk-grid-small">
+                                    <div class="uk-width-1-1">
+                                        <label class="uk-form-label" for="input-name">Label name</label>
+                                        <input class="uk-input uk-border-rounded" id="input-name" type="text">
+                                    </div>
+                                    <div class="uk-width-1-1 uk-margin-top toggle-icon" hidden>
+                                        <label class="uk-form-label" for="input-icon">Icon name <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: use fontawesome icon name here; pos: right"></i></label>
+                                        <input class="uk-input uk-border-rounded" id="input-icon" type="text">
+                                    </div>
+                                    <div class="uk-width-1-1 uk-margin">
+                                        <label class="uk-margin-right"><input class="uk-radio" id="radio-internal" type="radio" name="link-radio"> Internal link</label>
+                                        <label><input class="uk-radio" id="radio-custom" type="radio" name="link-radio"> Custom link</label>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-margin-bottom toggle-link">
+                                        <div class="toggle-internal">
+                                            <select class="uk-select uk-border-rounded" id="select-internal">
+                                                <option value="0">Please select...</option>
+                                            </select>
+                                        </div>
+                                        <div class="toggle-custom" hidden>
+                                            <input class="uk-input uk-border-rounded" id="input-custom" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-margin toggle-text" hidden>
+                                        <label class="uk-form-label" for="textarea-child">Create text at child menu <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Leave blank if you don't want use; pos: right"></i></label>
+                                        <textarea class="uk-textarea uk-border-rounded" id="textarea-child" rows="4"></textarea>
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <div class="uk-grid-small uk-child-width-1-2" data-uk-grid>
+                                            <div>
+                                                <button id="cancel-nav" class="uk-button uk-button-secondary uk-border-rounded uk-width-1-1">Cancel</button>
+                                            </div>
+                                            <div>
+                                                <button id="apply-nav" class="uk-button uk-button-primary uk-border-rounded uk-width-1-1">Apply changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="uk-margin-medium-top">
+                            <h4>Instructions</h4>
+                            <ul class="uk-list uk-list-disc uk-text-small">
+                                <li>To add a new menu click "Add menu item", fill the properties and click 'Apply changes'.</li>
+                                <li>To rearrange the order of the menu, grab the menu item and drag to new position.</li>
+                                <li>To create a child menu, click the "Add child" button in parent menu and fill the properties.</li>
+                                <li>Any menu item can be deleted by clicking on the "Trash icon" button.</li>
+                            </ul>
+                        </div>
+                        <hr class="uk-margin-medium">
+                        <p class="uk-text-small uk-text-muted uk-text-center">After making some changes, click this button to save your navigation</p>
+                        <button id="save-nav" class="uk-button uk-button-primary uk-border-rounded uk-width-1-1"><i class="fas fa-save fa-sm uk-margin-small-right"></i>Save navigation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <script src="js/blockit-utilities.min.js"></script>
+    <script src="js/blockit-editor.min.js"></script>
+    <script src="js/vendors/uikit.min.js"></script>
+    <script src="js/vendors/utilities.min.js"></script>
+</body>
+
+</html>

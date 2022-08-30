@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- standard meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Blockit is really awesome seriously, you must try!">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site properties -->
+    <title>Blockit editor - posts</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader"></div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container uk-container-expand" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo uk-margin-right" href="index.html">
+                                <img class="uk-margin-small-right in-offset-top-10" src="img/blockit-logo.svg" alt="blockit" width="24" height="24">Blockit
+                            </a>
+                            <!-- logo end -->
+                        </div>
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="pages.html"><i class="fas fa-clone fa-sm"></i>Pages</a></li>
+                            <li><a href="navigation.html"><i class="fas fa-compass fa-sm"></i>Navigation</a></li>
+                            <li class="uk-active"><a href="posts.html"><i class="fas fa-thumbtack fa-sm"></i>Posts</a></li>
+                            <li><a href="components.html"><i class="fas fa-plug fa-sm"></i>Components</a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog fa-sm"></i>Settings</a></li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-margin-medium-left">
+                            <a href="/" class="uk-button uk-button-primary uk-button-small uk-border-pill" target="_blank"><i class="fas fa-expand"></i>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section blockit-pages blockit-posts-action">
+            <div class="uk-container">
+                <div class="uk-grid">
+                    <div class="uk-width-2-3">
+                        <div class="post-wrap">
+                            <form id="page-form" class="uk-grid-small" data-uk-grid>
+                                <div class="uk-width-1-1 uk-margin-remove-bottom">
+                                    <input class="uk-input uk-form-large" id="post-title" placeholder="Add post title..." type="text" autocomplete="off">
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-remove-top">
+                                    <div id="editor-post"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div class="section-post-settings">
+                            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                <button id="save-post" class="uk-button uk-button-primary uk-border-rounded uk-width-1-1 uk-margin-bottom"><i class="fas fa-save fa-sm uk-margin-small-right"></i>Save post</button>
+                                <form id="page-form" class="uk-grid-small uk-margin-small-top" data-uk-grid>
+                                    <div class="uk-width-1-1">
+                                        <label class="uk-form-label" for="post-author">Author name</label>
+                                        <select class="uk-select uk-border-rounded" id="post-author">
+                                            <option value="0">Please select...</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <label class="uk-form-label" for="post-category">Category</label>
+                                        <select class="uk-select uk-border-rounded" id="post-category">
+                                            <option value="0">Uncategorized</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <label class="uk-form-label" for="post-tags">Tags <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Separate tags with commas; pos: right"></i></label>
+                                        <input class="uk-input uk-border-rounded" id="post-tags" type="text">
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <label class="uk-form-label" for="form-author-avatar">Featured image <i class="fas fa-info-circle fa-xs" data-uk-tooltip="title: Use 1170 x 528 px image size; pos: right"></i><button class="delete-image-btn uk-button fas fa-trash-alt uk-label uk-border-pill uk-float-right" hidden></button></label>
+                                        <div class="uk-form-controls uk-margin-small-bottom">
+                                            <div class="uk-width-1-1" data-uk-form-custom>
+                                                <div class="uk-inline-clip uk-transition-toggle post-image" tabindex="0">
+                                                    <img src="img/blockit-image-post.svg" alt="post-image">
+                                                    <div class="uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+                                                        <input class="img-post-upload" type="file">
+                                                        <button class="uk-button uk-button-secondary uk-border-rounded" type="button" tabindex="-1"><i class="fas fa-upload fa-sm uk-margin-small-right"></i>Upload image</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-margin-small-top">
+                                        <label class="uk-margin-right"><input class="uk-checkbox" id="post-share" type="checkbox" name="post-share"> Enable share button</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <script src="js/blockit-tag.js"></script>
+    <script src="js/blockit-utilities.min.js"></script>
+    <script src="js/blockit-editor.min.js"></script>
+    <script src="js/vendors/editorjs.min.js"></script>
+    <script src="js/vendors/uikit.min.js"></script>
+    <script src="js/vendors/utilities.min.js"></script>
+</body>
+
+</html>

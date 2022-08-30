@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-testimonial-5",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-3-4@m\">\n                <div>\n                    <div class=\"uk-flex uk-flex-middle\" data-uk-grid> \n                        <div class=\"uk-width-1-1 uk-width-auto@m uk-margin-medium-right in-margin-remove-right@s\">\n                            <img class=\"uk-align-center uk-margin-remove-bottom\" src=\"img/blockit/in-testimoni-1.png\" alt=\"client-testimoni\" width=\"300\">\n                        </div>\n                        <div class=\"uk-width-1-1 uk-width-expand@m\">\n                            <blockquote>\n                                <p class=\"uk-margin-bottom uk-text-large\">Quick, easy, and super helpful to collect and organise feedback from all kinds of channels we use to communicate with our customers.</p>\n                                <footer>Anthony Torres<br><cite>Copywriter at Aurous</cite></footer>\n                            </blockquote>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

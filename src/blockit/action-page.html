@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <!-- standard meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Blockit is really awesome seriously, you must try!">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site properties -->
+    <title>Blockit editor - pages</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader"></div>
+    <!-- preloader end -->
+    <header>
+        <!-- header content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+                <div class="uk-container uk-container-expand" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <!-- logo begin -->
+                            <a class="uk-logo uk-margin-right" href="index.html">
+                                <img class="uk-margin-small-right in-offset-top-10" src="img/blockit-logo.svg" alt="blockit" width="24" height="24">Blockit
+                            </a>
+                            <!-- logo end -->
+                        </div>
+                        <!-- navigation begin -->
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li class="uk-active"><a href="pages.html"><i class="fas fa-clone fa-sm"></i>Pages</a></li>
+                            <li><a href="navigation.html"><i class="fas fa-compass fa-sm"></i>Navigation</a></li>
+                            <li><a href="posts.html"><i class="fas fa-thumbtack fa-sm"></i>Posts</a></li>
+                            <li><a href="components.html"><i class="fas fa-plug fa-sm"></i>Components</a></li>
+                            <li><a href="settings.html"><i class="fas fa-cog fa-sm"></i>Settings</a></li>
+                        </ul>
+                        <!-- navigation end -->
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-margin-medium-left">
+                            <a href="/" class="uk-button uk-button-primary uk-button-small uk-border-pill" target="_blank"><i class="fas fa-expand"></i>Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- section content begin -->
+        <div class="uk-section blockit-pages blockit-pages-action">
+            <div class="uk-container">
+                <div class="uk-grid action-page-wrap">
+                    <div class="uk-width-3-5">
+                        <h4 class="head-title">Add new page</h4>
+                        <form id="page-form" class="uk-grid-small" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <label class="uk-form-label" for="page-name">Page name</label>
+                                <input class="uk-input uk-border-rounded" id="page-name" type="text">
+                            </div>
+                            <div class="uk-width-1-3">
+                                <label class="uk-form-label" for="page-title">Page title</label>
+                                <input class="uk-input uk-border-rounded" id="page-title" type="text">
+                            </div>
+                            <div class="uk-width-1-3">
+                                <label class="uk-form-label" for="page-type">Layout type</label>
+                                <select class="uk-select uk-border-rounded" id="page-type">
+                                    <option value="default">default</option>
+                                    <option value="plain">plain</option>
+                                </select>
+                            </div>
+                            <div class="uk-width-1-1">
+                                <div class="sortable-canvas uk-margin-top" data-uk-sortable="group: sortable-group; cls-custom: drag-canvas"></div>
+                            </div>
+                            <div class="uk-width-1-1">
+                                <button id="save-page" class="uk-button uk-button-primary uk-border-rounded uk-width-1-1 uk-margin-top"><i class="fas fa-save fa-sm uk-margin-small-right"></i>Save page</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4>Section library</h4>
+                        <div class="section-library-wrap">
+                            <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                                <a href="#" class="uk-button uk-button-default uk-border-rounded btn-library-filter">Show categories<i class="fas fa-caret-down fa-xs uk-margin-small-left"></i></a>
+                                <div data-uk-dropdown="offset: -6; mode: click; pos: bottom-justify;">
+                                    <hr class="uk-margin-small-bottom">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#wrap-exclusive" data-uk-scroll><i class="fas fa-award fa-sm uk-margin-small-right"></i>Exclusive</a></li>
+                                        <li><a href="#wrap-feature" data-uk-scroll><i class="fas fa-cubes fa-sm uk-margin-small-right"></i>Feature</a></li>
+                                        <li><a href="#wrap-content" data-uk-scroll><i class="fas fa-file-alt fa-sm uk-margin-small-right"></i>Content</a></li>
+                                        <li><a href="#wrap-team" data-uk-scroll><i class="fas fa-users fa-sm uk-margin-small-right"></i>Team</a></li>
+                                        <li><a href="#wrap-gallery" data-uk-scroll><i class="fas fa-images fa-sm uk-margin-small-right"></i>Gallery</a></li>
+                                        <li><a href="#wrap-pricing" data-uk-scroll><i class="fas fa-money-bill-wave fa-sm uk-margin-small-right"></i>Pricing</a></li>
+                                        <li><a href="#wrap-timeline" data-uk-scroll><i class="fas fa-history fa-sm uk-margin-small-right"></i>Timeline</a></li>
+                                        <li><a href="#wrap-testimonial" data-uk-scroll><i class="fas fa-comment-dots fa-sm uk-margin-small-right"></i>Testimonial</a></li>
+                                        <li><a href="#wrap-client-logo" data-uk-scroll><i class="fas fa-shapes fa-sm uk-margin-small-right"></i>Client logo</a></li>
+                                        <li><a href="#wrap-card" data-uk-scroll><i class="fas fa-sticky-note fa-sm uk-margin-small-right"></i>Card</a></li>
+                                        <li><a href="#wrap-counter" data-uk-scroll><i class="fas fa-hourglass-half fa-sm uk-margin-small-right"></i>Counter</a></li>
+                                        <li><a href="#wrap-faq" data-uk-scroll><i class="fas fa-question fa-sm uk-margin-small-right"></i>Faq</a></li>
+                                        <li><a href="#wrap-slideshow" data-uk-scroll><i class="fas fa-object-group fa-sm uk-margin-small-right"></i>Slideshow</a></li>
+                                    </ul>
+                                </div>
+                                <div class="scrollable-content sortable-library">
+                                    <div id="wrap-exclusive">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-award fa-sm uk-margin-small-right"></i>Exclusive</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-feature">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-cubes fa-sm uk-margin-small-right"></i>Feature</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-content">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-file-alt fa-sm uk-margin-small-right"></i>Content</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-team">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-users fa-sm uk-margin-small-right"></i>Team</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-gallery">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-images fa-sm uk-margin-small-right"></i>Gallery</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-pricing">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-money-bill-wave fa-sm uk-margin-small-right"></i>Pricing</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-timeline">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-history fa-sm uk-margin-small-right"></i>Timeline</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-testimonial">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-comment-dots fa-sm uk-margin-small-right"></i>Testimonial</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-client-logo">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-shapes fa-sm uk-margin-small-right"></i>Client logo</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-card">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-sticky-note fa-sm uk-margin-small-right"></i>Card</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-counter">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-hourglass-half fa-sm uk-margin-small-right"></i>Counter</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-faq">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-question fa-sm uk-margin-small-right"></i>Faq</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                    <div id="wrap-slideshow">
+                                        <h5 class="uk-heading-line"><span><i class="fas fa-object-group fa-sm uk-margin-small-right"></i>Slideshow</span></h5>
+                                        <div class="sortable-box uk-grid-small uk-child-width-1-2" data-uk-sortable="group: sortable-group; cls-custom: drag-library" data-uk-grid="masonry: true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+    <script src="js/blockit-utilities.min.js"></script>
+    <script src="js/blockit-editor.min.js"></script>
+    <script src="js/vendors/editorjs.min.js"></script>
+    <script src="js/vendors/uikit.min.js"></script>
+    <script src="js/vendors/utilities.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "time": 1629983827369,
+  "blocks": [
+    {
+      "id": "section-feature-15",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-1-2@m uk-text-center\">\n                <h5 class=\"uk-text-uppercase uk-text-primary uk-margin-remove-bottom\">small tagline</h5>\n                <h2 class=\"uk-margin-small-top\">Blockit heading 2 is here and this is really awesome, seriously</h2>\n                <p class=\"uk-margin-medium-top\">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis quasi architecto beatae dicta explicabo.</p>\n            </div>\n            <div class=\"uk-width-3-4@m\">\n                <div class=\"uk-grid uk-child-width-1-5@m uk-margin-large-top uk-text-center\" data-uk-grid>\n                    <div>\n                        <i class=\"fas fa-chart-pie fa-2x in-icon-wrap large\"></i>\n                        <h5 class=\"uk-margin-top\">Feature one</h5>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-fire-alt fa-2x in-icon-wrap large\"></i>\n                        <h5 class=\"uk-margin-top\">Feature two</h5>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-globe-americas fa-2x in-icon-wrap large\"></i>\n                        <h5 class=\"uk-margin-top\">Feature three</h5>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-leaf fa-2x in-icon-wrap large\"></i>\n                        <h5 class=\"uk-margin-top\">Feature four</h5>\n                    </div>\n                    <div>\n                        <i class=\"fas fa-pizza-slice fa-2x in-icon-wrap large\"></i>\n                        <h5 class=\"uk-margin-top\">Feature five</h5>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ],
+  "version": "2.21.0"
+}

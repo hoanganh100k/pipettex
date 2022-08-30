@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-card-14",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-3-4@m\">\n                <div class=\"uk-child-width-1-2@m in-card-14\" data-uk-grid>\n                    <div>\n                        <div class=\"uk-card uk-card-default uk-border-rounded\">\n                            <div class=\"uk-card-media-top uk-text-center\">\n                                <img src=\"img/blockit/in-card-image-11.jpg\" alt=\"sample-image\">\n                            </div>\n                            <div class=\"uk-card-body uk-box-shadow-medium\">\n                                <h5>\n                                    <a href=\"#\">Some cool service tagline<i class=\"fas fa-arrow-right in-icon-wrap small circle uk-float-right\"></i></a>\n                                </h5>                  \n                            </div>\n                        </div>\n                    </div>\n                    <div>\n                        <div class=\"uk-card uk-card-default uk-border-rounded\">\n                            <div class=\"uk-card-media-top uk-text-center\">\n                                <img src=\"img/blockit/in-card-image-12.jpg\" alt=\"sample-image\">\n                            </div>\n                            <div class=\"uk-card-body uk-box-shadow-medium\">\n                                <h5>\n                                    <a href=\"#\">Some cool service tagline<i class=\"fas fa-arrow-right in-icon-wrap small circle uk-float-right\"></i></a>\n                                </h5>                  \n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}

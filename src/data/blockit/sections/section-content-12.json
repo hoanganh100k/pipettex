@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "id": "section-content-12",
+      "type": "code",
+      "data": {
+        "language": "HTML",
+        "text": "<!-- section content begin -->\n<div class=\"uk-section\">\n    <div class=\"uk-container\">\n        <div class=\"uk-grid uk-flex uk-flex-center\">\n            <div class=\"uk-width-3-4@m\">\n                <div data-uk-grid>\n                    <div class=\"uk-width-1-2@s uk-width-2-3@m\">\n                        <h1 class=\"uk-margin-remove\">We <span class=\"in-highlight\">help</span> our customers.</h1>\n                        <p class=\"uk-text-lead uk-text-muted uk-margin-small-top\">To engage investors so their companies can grow</p>\n                        <p>Our customers look to us as guides, and we weave our deep legal and technical experience into our software and services.</p>\n                    </div>\n                    <div class=\"uk-width-1-2@s uk-width-expand@m\">\n                        <ul class=\"uk-list uk-list-large uk-list-divider\">\n                            <li>\n                                <div class=\"uk-flex uk-flex-middle\">\n                                    <i class=\"fas fa-paper-plane fa-lg in-icon-wrap primary-color uk-margin-right\"></i>\n                                    <div>\n                                        <h2 class=\"uk-margin-remove-bottom count\" data-counter-end=\"35817\">0</h2>\n                                        <span class=\"uk-label in-label-small\">Business launch</span>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"uk-flex uk-flex-middle\">\n                                    <i class=\"fas fa-user-tie fa-lg in-icon-wrap primary-color uk-margin-right\"></i>\n                                    <div>\n                                        <h2 class=\"uk-margin-remove-bottom count\" data-counter-end=\"4400\">0</h2>\n                                        <span class=\"uk-label in-label-small\">Investor engaged</span>\n                                    </div>\n                                </div>\n                            </li>\n                        </ul>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- section content end -->"
+      }
+    }
+  ]
+}
